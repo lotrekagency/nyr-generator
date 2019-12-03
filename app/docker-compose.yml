@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  web:
+    image: devries/bottle
+    restart: unless-stopped
+    networks:
+      - nyr-generator-backend-tier
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/app/
+    command: bash app/docker-entrypoint.sh
+
+networks:
+    nyr-generator-backend-tier:
+        driver: bridge

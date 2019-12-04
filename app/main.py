@@ -21,6 +21,10 @@ def index():
     print(data['newyearsresolution'][value])
     return template('app/views/index.tpl', title="Homepage", url_people="/images/group_people.png")
 
+@app.route('/prova')
+def page(name='Buonipropositi Random'):
+    return template('app/views/buonipropositi.tpl', name=name, title='Buoni Propositi Randomize', url_heart="/images/heart.png", url_sport="/images/sport.png", url_friends="/images/friends.png", url_health="/images/health.png", url_money="/images/money.png", social_facebook="/images/facebook.png", social_linkedin="/images/linkedin.png", social_twitter="/images/twitter.png", social_instagram="/images/instagram.png")
+
 @app.route('/<name>')
 def page(name='World'):
     return template('app/views/page.tpl', name=name)
@@ -37,4 +41,4 @@ def send_image(filename):
 def send_static(filename):
     return static_file(filename, root='/path/to/static/files')
 
-run(app, host='localhost', port=8080, reloader=True, debug=True)
+run(app, host='0.0.0.0', port=8080, reloader=True, debug=True)

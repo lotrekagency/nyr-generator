@@ -20,6 +20,36 @@
             overflow: hidden;
         }
 
+        @media(max-width: 576px){
+            .container_text .section_top .title{
+                font-size: 35px!important;
+            }
+            .btn{
+                font-size: 14px!important;
+            }
+            .btn span{
+                width: 25px!important;
+                height: 4px!important;
+            }
+            .btn span:after{
+                transform: rotate(-45deg) translate(6px,13px)!important;
+                width: 15px!important;
+                height: 4px!important;
+            }
+            .btn span:before{
+                transform: rotate(45deg) translate(7px,-12px)!important;
+                width: 15px!important;
+                height: 4px!important;
+            }
+            .copyright{
+                padding-top: 1.5em!important;
+            }
+            .section_bottom .description{
+                padding-bottom: 0!important;
+            }
+            
+        }
+
         .page{
             width: 100%;
             height: 100vh;

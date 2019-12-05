@@ -1,4 +1,5 @@
-FROM python:3.7 as build-python
+# this is an official Python runtime, used as the parent image
+FROM python:3.6.5-slim
 
 RUN apt-get -y update \
   && apt-get install -y gettext \
@@ -15,7 +16,9 @@ COPY ./requirements.txt /app/
 
 RUN pip install -r ./requirements.txt
 
-EXPOSE 8080
-ENV PORT 8080
-ENV PYTHONUNBUFFERED 1
-ENV PROCESSES 4
+# unblock port 80 for the Bottle app to run on
+EXPOSE 5000
+
+# Finally, we run uWSGI with the ini file we
+# created earlier
+CMD [ "uwsgi", "--ini", "app/app.ini" ]

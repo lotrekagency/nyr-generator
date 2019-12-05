@@ -2,15 +2,30 @@ version: '2'
 
 services:
   web:
-    image: devries/bottle
+    build:
+      context: .
+      dockerfile: docker/dockerfiles/web.Dockerfile
     restart: unless-stopped
     networks:
       - nyr-generator-backend-tier
-    ports:
-      - 8080:8080
+    # ports:
+    #   - 5000:8080
     volumes:
       - ./:/app/
-    command: bash app/docker-entrypoint.sh
+    command: bash /app/docker-entrypoint.sh
+
+  nginx:
+    image: nginx:latest
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: docker/dockerfiles/nginx.Dockerfile
+    ports:
+      - 5000:80
+    depends_on:
+      - web
+    networks:
+        - nyr-generator-backend-tier
 
 networks:
     nyr-generator-backend-tier:

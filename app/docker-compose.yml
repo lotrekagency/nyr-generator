@@ -1,0 +1,27 @@
+version: '3'
+services:
+  webserver:
+    image: nginx:latest
+    ports:
+        - "8080:80"
+    volumes:
+        - "./site.conf:/etc/nginx/conf.d/site.conf"
+    links:
+        - backend
+  backend:
+    build: 
+      context: .
+      dockerfile: Pyramid.Dockerfile
+    image: firehose/backend:latest
+    volumes:
+        - "./development.ini:/conf/settings.ini"
+        # development only
+        - "./:/app"
+        # development only
+    entrypoint:
+        - gunicorn
+        - --paster
+        - /conf/settings.ini
+        - -b
+        - 0.0.0.0:8000
+        - --reload

@@ -1,33 +1,45 @@
-from bottle import Bottle, run, template, error
+
+import bottle
+
+from bottle import run, template, error, route, request, abort
+
 import json
+
 from pprint import pprint
 from random import seed
 from random import randint
 from datetime import datetime
+from pymongo import Connection
 
-app = Bottle()
 
+connection = Connection('localhost', 27017)
+db = connection.mydatabase
+# generare 6 buoni propositi di categorie diverse
+@route('/api/random-generate/', method='GET')
+def get_document():
 
-@app.route('/')
+    count = db['documents'].count()
+    print(count)
+    categories = ['Sport', 'Lavoro', 'Motto']
+
+    for category in categories:
+        entity = db['documents'].find_one({'Categoria':category})
+        print(entity)
+    if not entity:
+        abort(404, 'No document with id %s' % id)
+    return 'eilà'
+
+@route('/')
 def index():
-    with open('newyearsresolution.json') as f:
-        data = json.load(f)
-    json_size = len(data['newyearsresolution'])-1
-    dt = datetime.today()  # Get timezone naive now
-    seed_n = int(dt.timestamp())
-    seed(seed_n)
-    value = randint(0, json_size)
-    print(value)
-    print(data['newyearsresolution'][value])
     return template('app/views/index.tpl')
 
-@app.route('/<name>')
+@route('/<name>')
 def page(name='World'):
     return template('app/views/page.tpl', name=name)
 
-@app.error(404)
+@error(404)
 def error404(error):
     return template('app/views/404.tpl')
 
 
-run(app, host='localhost', port=8080, reloader=True)
+run(host='localhost', port=8080, reloader=True)

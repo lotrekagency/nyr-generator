@@ -4,6 +4,10 @@ from pprint import pprint
 from random import seed
 from random import randint
 from datetime import datetime
+from PIL import Image, ImageDraw, ImageFont
+ 
+image = Image.open('app/images/group_people.png') 
+draw = ImageDraw.Draw(image)
 
 app = Bottle()
 
@@ -19,6 +23,22 @@ def index():
     value = randint(0, json_size)
     print(value)
     print(data['newyearsresolution'][value])
+    
+    fontsize = 1
+    img_fraction = 0.50
+    name = 'Ciao andrea'
+    font = ImageFont.truetype("Roboto-Black.ttf", fontsize)
+    while font.getsize(name)[0] < img_fraction*image.size[0]:
+        fontsize += 1
+        font = ImageFont.truetype("Roboto-Black.ttf", fontsize)
+
+    fontsize -= 1
+    font = ImageFont.truetype("Roboto-Black.ttf", 200)
+    (x, y) = (1000, 25)
+    color = 'rgb(255, 255, 255)'
+    draw.text((x, y), name, fill=color, font=font)
+    image.save('app/views/prova.png')
+
     return template('app/views/index.tpl', title="Homepage", url_people="/images/group_people.png")
 
 @app.route('/prova')

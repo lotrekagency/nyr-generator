@@ -46,7 +46,7 @@ def random_generate():
 @route('/')
 def index():
     return template(
-        'app/views/index.tpl',
+        'views/index.tpl',
         title="Homepage",
     )
 
@@ -67,7 +67,7 @@ def page(slug):
         resolutions[resolution["Categoria"]] = resolution["Testo"]
 
     return template(
-        'app/views/buonipropositi.tpl',
+        'views/buonipropositi.tpl',
         title='Buoni Propositi Randomize',
         resolutions=resolutions
     )
@@ -75,12 +75,12 @@ def page(slug):
 
 @error(404)
 def error404(error):
-    return template('app/views/404.tpl')
+    return template('views/404.tpl')
 
 
 @route('/images/<filename:re:.*\.png>')
 def send_image(filename):
-    return static_file(filename, root='app/images', mimetype='image/png')
+    return static_file(filename, root='images', mimetype='image/png')
 
 
 @route('/static/<filename:path>')

@@ -2,13 +2,13 @@ import json
 from pymongo import Connection
 
 from generate_json import to_JSON, convert_write_json
- 
+
 connection = Connection('localhost', 27017)
 db = connection.mydatabase
 connection.drop_database('mydatabase')
 
-csvfile = 'app/files/file.csv'
-jsonfile = 'app/files/file.json'
+csvfile = 'files/file.csv'
+jsonfile = 'files/file.json'
 
 to_JSON(csvfile, jsonfile)
 with open(jsonfile) as f:

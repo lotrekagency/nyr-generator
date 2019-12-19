@@ -326,7 +326,7 @@
     <body>
         <section class="background">
             <div class="container_text">
-                <div class="section_top">
+                <div class="section_top" >
                     <h1 class="title">Buonipropositi.com</h1>
                 </div>
                 <div class="section_center">
@@ -338,40 +338,35 @@
                                     <div class="border_left">
                                         <img src="{{ url_heart }}" />
                                     </div>
-                                    <p>
-                                        Smetterò di uscire con chiunque
+                                    <p id="heart">
                                     </p>
                                 </div>
                                 <div class="div_proposito">
                                     <div class="border_left">
                                         <img src="{{ url_sport }}" />
                                     </div>
-                                    <p>
-                                        Cercherò una banca con spese più basse 
+                                    <p id="sport">
                                     </p>
                                 </div>
                                 <div class="div_proposito">
                                     <div class="border_left">
                                         <img src="{{ url_friends }}" />
                                     </div>
-                                    <p>
-                                        Inviterò gli amici a cena quando non ho voglia di uscire
+                                    <p id="friends">
                                     </p>
                                 </div>
                                 <div class="div_proposito">
                                     <div class="border_left">
                                         <img src="{{ url_health }}" />
                                     </div>
-                                    <p>
-                                        Finirò la Spartan Race
+                                    <p id="health">
                                     </p>
                                 </div>
                                 <div class="div_proposito">
                                     <div class="border_left">
                                         <img src="{{ url_money }}" />
                                     </div>
-                                    <p>
-                                        Mi comporterò meglio con i miei colleghi
+                                    <p id="soldi">
                                     </p>
                                 </div>
                             </div>
@@ -380,8 +375,7 @@
                             <div class="col-lg-9 mt-4">
                                 <span class="title2 mb-2">Il mio motto per quest'anno sarà:</span>
                                 <div class="motto">
-                                    <p>
-                                        But I must explain to you how all this mistaken <b>idea of denouncing</b> pleasure and praising pain was born and I wil.
+                                    <p id="motto">
                                     </p>
                                 </div>
                                 <div style="margin-bottom: 1em; position: relative; z-index: 10; display: flex; align-items: center; justify-content: center; flex-direction: column;">
@@ -396,9 +390,9 @@
                                         <a href="#">
                                             <img src="{{ social_twitter }}" />
                                         </a>
-                                        <a href="#">
-                                            <img src="{{ social_instagram }}" />
-                                        </a>
+                                        <!--<a href="#">
+                                             <img src="{{ social_instagram }}" />
+                                        </a>-->
                                     </div>
                                 </div>
                             </div>
@@ -407,7 +401,7 @@
                 </div>
                 <div class="section_bottom">
                     <div style="width: 100%; margin-right: 5em; display: flex; align-items: center; justify-content: flex-end">
-                        <a href="#" class="btn" >Genera nuovo proposito <div><span></span></div></a>
+                        <a href="#" class="btn" onclick="callAjax()">Genera nuovo proposito <div><span></span></div></a>
                     </div>
                     <div style="width: 100%; display: flex; align-items: flex-end; justify-content: center;">
                         <span class="copyright">Copyright ©2015-20 Lotrek S.c.r.l</span>
@@ -416,4 +410,55 @@
             </div>
         </section>
     </body>
+
+    <script>
+
+    function callAjax() {
+        var xhttp = new XMLHttpRequest();
+        var amore = ""; var soldi = ""; var amici = ""; var sport = ""; var lavoro = ""; var motto = "";
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var response = this.responseText;
+                var obj = JSON.parse(response);
+                for(var i = 0; i < obj['objects'].length; i++){
+                    amore = obj['objects'][0]['Testo'];
+                    soldi = obj['objects'][1]['Testo'];
+                    amici = obj['objects'][2]['Testo'];
+                    sport = obj['objects'][3]['Testo'];
+                    lavoro = obj['objects'][4]['Testo'];
+                    motto = obj['objects'][5]['Testo'];
+                }
+
+                var hostname = window.location.hostname;
+                window.location.href = "buoni-propositi?amore=" + amore + "&?soldi=" + soldi + "&?amici=" + amici + "&?sport=" + sport + "&?lavoro=" + lavoro + "&?motto=" + motto;
+            }
+        };
+
+        xhttp.open("GET", "/api/random-generate/", true);
+        xhttp.send();
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var options = window.location.search.slice(1)
+            .split('&')
+            .reduce(function _reduce (/*Object*/ a, /*String*/ b) {
+                b = b.split('=');
+                a[b[0]] = decodeURIComponent(b[1]);
+                return a;
+            }, {});
+        var paragraphHeart = document.getElementById("heart");
+        paragraphHeart.textContent += options['amore'];
+        var paragraphSport = document.getElementById("sport");
+        paragraphSport.textContent += options['?sport'];
+        var paragraphFriends = document.getElementById("friends");
+        paragraphFriends.textContent += options['?amici'];
+        var paragraphHealth = document.getElementById("health");
+        paragraphHealth.textContent += options['?lavoro'];
+        var paragraphSoldi = document.getElementById("soldi");
+        paragraphSoldi.textContent += options['?soldi'];
+        var paragraphMotto = document.getElementById("motto");
+        paragraphMotto.textContent += options['?motto'];
+    });
+
+    </script>
 </html>

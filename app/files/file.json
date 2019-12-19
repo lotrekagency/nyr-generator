@@ -1,0 +1,54 @@
+[
+    {
+        "Testo": "Andare in bici",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Fare calcio",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Essere pi\u00f9 disponibile",
+        "Categoria": "Lavoro"
+    },
+    {
+        "Testo": "Sei il migliore",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Sport 2",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Sport 3",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Lavoro 2",
+        "Categoria": "Lavoro"
+    },
+    {
+        "Testo": "Motto 2",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Smetter\u00f2 di uscire con chiunque",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Cercher\u00f2 una banca con spese pi\u00f9 basse",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Inviter\u00f2 gli amici a cena quando non ho voglia di uscire",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Finir\u00f2 lo spartan race",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Mi comporter\u00f2 meglio con i miei colleghi",
+        "Categoria": "Lavoro"
+    }
+]

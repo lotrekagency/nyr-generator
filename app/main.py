@@ -34,12 +34,12 @@ def random_generate():
             i = i + 1
             if i == n_random:
                 break
-        slug = slug + "-" + str(entity_random["_id"])
+        slug = slug + "_" + str(entity_random["_id"])
         response_dict["objects"].append({
             "Categoria" : entity_random["Categoria"],
             "Testo" : entity_random["Testo"],
         })
-    response_dict["slug"] = base64.urlsafe_b64encode(slug[1:].encode()).decode()
+    response_dict["slug"] = base64.standard_b64encode(slug[1:].encode()).decode('UTF-8')
     return response_dict
 
 
@@ -53,10 +53,23 @@ def index():
 
 @route('/<slug>')
 def page(slug):
-    print(slug)
+    print ('SLUG')
+    print (slug)
+    decoded_slug = base64.standard_b64decode(slug).decode()
+    ids_to_search = []
+    resolutions = {}
+
+    resolutions_from_db = db['documents'].find({"_id" :{
+        "$in" : decoded_slug.split('_')
+    }});
+
+    for resolution in resolutions_from_db:
+        resolutions[resolution["Categoria"]] = resolution["Testo"]
+
     return template(
         'app/views/buonipropositi.tpl',
         title='Buoni Propositi Randomize',
+        resolutions=resolutions
     )
 
 

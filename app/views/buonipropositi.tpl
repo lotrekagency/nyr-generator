@@ -339,6 +339,7 @@
                                         <img src="/images/heart.png" />
                                     </div>
                                     <p id="heart">
+                                    {{resolutions['Amore']}}
                                     </p>
                                 </div>
                                 <div class="div_proposito">
@@ -346,6 +347,7 @@
                                         <img src="/images/sport.png" />
                                     </div>
                                     <p id="sport">
+                                    {{resolutions['Sport']}}
                                     </p>
                                 </div>
                                 <div class="div_proposito">
@@ -353,6 +355,7 @@
                                         <img src="/images/friends.png" />
                                     </div>
                                     <p id="friends">
+                                    {{resolutions['Amici']}}
                                     </p>
                                 </div>
                                 <div class="div_proposito">
@@ -360,6 +363,7 @@
                                         <img src="/images/health.png" />
                                     </div>
                                     <p id="health">
+                                    {{resolutions['Lavoro']}}
                                     </p>
                                 </div>
                                 <div class="div_proposito">
@@ -367,6 +371,7 @@
                                         <img src="/images/money.png" />
                                     </div>
                                     <p id="soldi">
+                                    {{resolutions['Soldi']}}
                                     </p>
                                 </div>
                             </div>
@@ -376,6 +381,7 @@
                                 <span class="title2 mb-2">Il mio motto per quest'anno sarà:</span>
                                 <div class="motto">
                                     <p id="motto">
+                                    {{resolutions['Motto']}}
                                     </p>
                                 </div>
                                 <div style="margin-bottom: 1em; position: relative; z-index: 10; display: flex; align-items: center; justify-content: center; flex-direction: column;">

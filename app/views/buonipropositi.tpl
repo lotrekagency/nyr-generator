@@ -207,7 +207,7 @@
         .div_proposito{
             background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 9.55%, rgba(255, 255, 255, 0) 100.92%);
             border-radius: 70px;
-            width: 100%; 
+            width: 100%;
             height: 50px;
             margin: 1em 0em;
             position: relative;
@@ -307,7 +307,7 @@
         }
 
         .cont_social{
-            width: 26%; 
+            width: 26%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -321,7 +321,7 @@
             justify-content: center;
         }
 
-        
+
     </style>
     <body>
         <section class="background">
@@ -336,35 +336,35 @@
                                 <span class="title">I buoni propositi del mio 2020 sono esattamente questi:</span>
                                 <div class="div_proposito">
                                     <div class="border_left">
-                                        <img src="{{ url_heart }}" />
+                                        <img src="/images/heart.png" />
                                     </div>
                                     <p id="heart">
                                     </p>
                                 </div>
                                 <div class="div_proposito">
                                     <div class="border_left">
-                                        <img src="{{ url_sport }}" />
+                                        <img src="/images/sport.png" />
                                     </div>
                                     <p id="sport">
                                     </p>
                                 </div>
                                 <div class="div_proposito">
                                     <div class="border_left">
-                                        <img src="{{ url_friends }}" />
+                                        <img src="/images/friends.png" />
                                     </div>
                                     <p id="friends">
                                     </p>
                                 </div>
                                 <div class="div_proposito">
                                     <div class="border_left">
-                                        <img src="{{ url_health }}" />
+                                        <img src="/images/health.png" />
                                     </div>
                                     <p id="health">
                                     </p>
                                 </div>
                                 <div class="div_proposito">
                                     <div class="border_left">
-                                        <img src="{{ url_money }}" />
+                                        <img src="/images/money.png" />
                                     </div>
                                     <p id="soldi">
                                     </p>
@@ -382,16 +382,16 @@
                                     <span class="share_text">Condividi il tuo motto:</span>
                                     <div class="cont_social">
                                         <a href="#">
-                                            <img src="{{ social_facebook }}" />
+                                            <img src="/images/facebook.png" />
                                         </a>
                                         <a href="#">
-                                            <img src="{{ social_linkedin }}" />
+                                            <img src="/images/linkedin.png" />
                                         </a>
                                         <a href="#">
-                                            <img src="{{ social_twitter }}" />
+                                            <img src="/images/twitter.png" />
                                         </a>
                                         <!--<a href="#">
-                                             <img src="{{ social_instagram }}" />
+                                             <img src="/images/instagram.png" />
                                         </a>-->
                                     </div>
                                 </div>
@@ -415,50 +415,16 @@
 
     function callAjax() {
         var xhttp = new XMLHttpRequest();
-        var amore = ""; var soldi = ""; var amici = ""; var sport = ""; var lavoro = ""; var motto = "";
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                var response = this.responseText;
-                var obj = JSON.parse(response);
-                for(var i = 0; i < obj['objects'].length; i++){
-                    amore = obj['objects'][0]['Testo'];
-                    soldi = obj['objects'][1]['Testo'];
-                    amici = obj['objects'][2]['Testo'];
-                    sport = obj['objects'][3]['Testo'];
-                    lavoro = obj['objects'][4]['Testo'];
-                    motto = obj['objects'][5]['Testo'];
-                }
-
-                var hostname = window.location.hostname;
-                window.location.href = "buoni-propositi?amore=" + amore + "&?soldi=" + soldi + "&?amici=" + amici + "&?sport=" + sport + "&?lavoro=" + lavoro + "&?motto=" + motto;
+                var obj = JSON.parse(xhttp.responseText);
+                window.location.href = "/" + obj.slug;
             }
         };
-
         xhttp.open("GET", "/api/random-generate/", true);
         xhttp.send();
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        var options = window.location.search.slice(1)
-            .split('&')
-            .reduce(function _reduce (/*Object*/ a, /*String*/ b) {
-                b = b.split('=');
-                a[b[0]] = decodeURIComponent(b[1]);
-                return a;
-            }, {});
-        var paragraphHeart = document.getElementById("heart");
-        paragraphHeart.textContent += options['amore'];
-        var paragraphSport = document.getElementById("sport");
-        paragraphSport.textContent += options['?sport'];
-        var paragraphFriends = document.getElementById("friends");
-        paragraphFriends.textContent += options['?amici'];
-        var paragraphHealth = document.getElementById("health");
-        paragraphHealth.textContent += options['?lavoro'];
-        var paragraphSoldi = document.getElementById("soldi");
-        paragraphSoldi.textContent += options['?soldi'];
-        var paragraphMotto = document.getElementById("motto");
-        paragraphMotto.textContent += options['?motto'];
-    });
 
     </script>
 </html>

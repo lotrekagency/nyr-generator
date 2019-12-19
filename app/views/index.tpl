@@ -47,7 +47,7 @@
             .section_bottom .description{
                 padding-bottom: 0!important;
             }
-            
+
         }
 
         .page{
@@ -87,7 +87,7 @@
         .container_bg-people .background_people{
             width: 100%;
             height: 100%;
-            background-image: url("{{ url_people }}");
+            background-image: url("/images/group_people.png");
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
@@ -291,25 +291,12 @@
 
     function callAjax() {
         var xhttp = new XMLHttpRequest();
-        var amore = ""; var soldi = ""; var amici = ""; var sport = ""; var lavoro = ""; var motto = "";
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                var response = this.responseText;
-                var obj = JSON.parse(response);
-                for(var i = 0; i < obj['objects'].length; i++){
-                    amore = obj['objects'][0]['Testo'];
-                    soldi = obj['objects'][1]['Testo'];
-                    amici = obj['objects'][2]['Testo'];
-                    sport = obj['objects'][3]['Testo'];
-                    lavoro = obj['objects'][4]['Testo'];
-                    motto = obj['objects'][5]['Testo'];
-                }
-
-                var hostname = window.location.hostname;
-                window.location.href = "buoni-propositi?amore=" + amore + "&?soldi=" + soldi + "&?amici=" + amici + "&?sport=" + sport + "&?lavoro=" + lavoro + "&?motto=" + motto;
+                var obj = JSON.parse(xhttp.responseText);
+                window.location.href = "/" + obj.slug;
             }
         };
-
         xhttp.open("GET", "/api/random-generate/", true);
         xhttp.send();
     }

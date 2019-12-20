@@ -1,11 +1,11 @@
 # Build FE assets
 
 FROM node:10 as build-fe
-# RUN npm install yarn
-# RUN yarn global add webpack
+RUN npm install yarn
+RUN yarn global add gulp
+
 RUN mkdir /feapp
 
-RUN mkdir /feapp/build
 # WORKDIR /feapp
 
 # COPY package.json /feapp/

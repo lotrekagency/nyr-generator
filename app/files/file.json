@@ -1,54 +1,882 @@
 [
     {
-        "Testo": "Andare in bici",
-        "Categoria": "Sport"
-    },
-    {
-        "Testo": "Fare calcio",
-        "Categoria": "Sport"
-    },
-    {
-        "Testo": "Essere pi\u00f9 disponibile",
-        "Categoria": "Lavoro"
-    },
-    {
-        "Testo": "Sei il migliore",
-        "Categoria": "Motto"
-    },
-    {
-        "Testo": "Sport 2",
-        "Categoria": "Sport"
-    },
-    {
-        "Testo": "Sport 3",
-        "Categoria": "Sport"
-    },
-    {
-        "Testo": "Lavoro 2",
-        "Categoria": "Lavoro"
-    },
-    {
-        "Testo": "Motto 2",
-        "Categoria": "Motto"
-    },
-    {
-        "Testo": "Smetter\u00f2 di uscire con chiunque",
-        "Categoria": "Amore"
-    },
-    {
-        "Testo": "Cercher\u00f2 una banca con spese pi\u00f9 basse",
-        "Categoria": "Soldi"
-    },
-    {
-        "Testo": "Inviter\u00f2 gli amici a cena quando non ho voglia di uscire",
+        "Testo": "Smetter\u00f2 di bestemmiare di fronte ai miei amici credenti",
         "Categoria": "Amici"
     },
     {
-        "Testo": "Finir\u00f2 lo spartan race",
+        "Testo": "Io e il parroco diventeremo amici",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Inizier\u00f2 ad uscire con i colleghi",
+        "Categoria": " basta scuse"
+    },
+    {
+        "Testo": "\u00c8 arrivato il momento dei balli di gruppo",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Brucer\u00f2 il mio divano e la copertina netflix... Si esce!",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Eliminer\u00f2 la mia data di nascita da Facebook per vedere realmente chi si ricorda del mio compleanno",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Iscriver\u00f2 i miei amici a Uomini e Donne",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Inizier\u00f2 a frequentare i gabinetti di lettura",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Offrir\u00f2 consulenza gratutita su come gestire un profilo Tinder",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Proporr\u00f2 ai miei amici di guardare i film belli tipo la corazzata Pot\u00ebmkin",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Non ci picchieremo pi\u00f9 durante il Monopoli",
+        "Categoria": " promesso!"
+    },
+    {
+        "Testo": "Aprir\u00f2 ai Testimoni di Geova",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Aprir\u00f2 ai venditori del Folletto",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Ai genitori dir\u00f2 la verit\u00e0 quando mi faranno vedere i loro neonati",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Quando usciremo la sera",
+        "Categoria": " guider\u00f2 sempre io"
+    },
+    {
+        "Testo": "Mi sbronzer\u00f2 anche per voi",
+        "Categoria": " cari amici"
+    },
+    {
+        "Testo": "Chiamer\u00f2 fra tutti i miei amici",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "La gang non s'infama",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Sistemer\u00f2 tutta la rubrica del mio smartphone",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Smetter\u00f2 di regalare gli smartbox",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Non obietter\u00f2 sulle decisioni che riguardano le vacanze",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Smetter\u00f2 di parlare con il mio cane e prover\u00f2 a parlare con le persone vere",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Far\u00f2 una pulizia contatti per eliminare tutte le persone false",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Dir\u00f2 a tutti che Babbo Natale non esiste",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Dir\u00f2 ai figli dei miei amici che Babbo Natale esiste",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Entrer\u00f2 in una setta psicoreligiosa",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Inizier\u00f2 a frequentare la parrocchia ",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Mi iscriver\u00f2 alle scuole serali ",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Mander\u00f2 un messaggio a tutti i contatti della rubrica di cui non ricordo la faccia",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Rintraccer\u00f2 tutte le persone che ho come amici su Facebook",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Mi qualificher\u00f2 alle olimpiadi",
         "Categoria": "Sport"
     },
     {
-        "Testo": "Mi comporter\u00f2 meglio con i miei colleghi",
-        "Categoria": "Lavoro"
+        "Testo": "Mi dar\u00f2 ufficialmente al calcio femminile",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Visiter\u00f2 la palestra che sto pagando da 3 anni",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Smetter\u00f2 di ungermi prima di andare in palestra",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Sfider\u00f2 Usain Bolt a chi mangia pi\u00f9 lasagne in 10 minuti",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Mi far\u00f2 assumere come allenatore del Napoli",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Andr\u00f2 in ritiro con il Napoli perch\u00e9 adoro la solitudine",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Istituir\u00f2 un torneo aziendale di ruba bandiera",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Mi allener\u00f2 per alzarmi dal divano senza dire oioia",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Accetter\u00f2 l'esistenza del mio mal di schiena e cercer\u00f2 di combatterla",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Mi comprer\u00f2 Fifa 2020",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Mi dar\u00f2 al Parkour",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Far\u00f2 le foto con la linguaccia mentre faccio jogging",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Mi impegner\u00f2 affinch\u00e9 il mio profilo Instagram inganni la gente sulla mia attivit\u00e0 sportiva",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Parteciper\u00f2 a tutte le sagre di paese che conosco raggiungendole a corsa",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "A Tokyo 2020 tifer\u00f2 la nazionale degli apolidi",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Mi dar\u00f2 al sesso per sport",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Mi comprer\u00f2 un'auto sportiva",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Creer\u00f2 una movimento per far diventare la gara di rutti disciplina olimpica",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Indosser\u00f2 solo tutine mega aderenti e mega sgargianti",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Andr\u00f2 a fare sport nel parco con indosso solo un impermeabile",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Cercher\u00f2 di non rompermi nessun legamento",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Diventer\u00f2 uno star della pallavolo del quartiere",
+        "Categoria": "Sport"
+    },
+    {
+        "Testo": "Basta leggins",
+        "Categoria": " giuro"
+    },
+    {
+        "Testo": "Mi dar\u00f2 al poliamore",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Mi sposer\u00f2 con me stesso/a",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Perder\u00f2 la verginit\u00e0",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Riacquister\u00f2 la verginit\u00e0",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Mi legger\u00f2 tutti gli Harmony per cercare ispirazione",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Punter\u00f2 ad avere un orgasmo al giorno",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Punter\u00f2 ad avere almeno un orgasmo",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Smetter\u00f2 di frequentarmi",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Maratona Beautiful dall'anno 0",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Mi innamorer\u00f2 di un chatbot",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Creer\u00f2 un movimento per far s\u00ec che ci si possa sposare con i nostri amici pelosetti",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Mi ubriacher\u00f2 continuamente fino a che non mi risveglier\u00f2 con un anello al dito",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Mi dar\u00f2 al sesso a pagamento",
+        "Categoria": " da capire ancora in che ruolo"
+    },
+    {
+        "Testo": "Inizier\u00f2 a rispondere ai messaggi su Tinder",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Cercher\u00f2 di partecipare a Uomini e Donne o almeno a Forum",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Far\u00f2 una dichiarazione d'amore a un/a mio/a collega",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Mi sposer\u00f2 con una Sardina",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Dar\u00f2 un nome alla mia mano",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Torner\u00f2 single",
+        "Categoria": " ancora pi\u00f9 single di prima"
+    },
+    {
+        "Testo": "Diventer\u00f2 un alpaca e cercher\u00f2 una famiglia amorosa che mi adotti",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Prover\u00f2 a sedurre il mio pesce rosso",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Prover\u00e0 a insegnare al mio gatto a rispondermi quando dico Tesoro",
+        "Categoria": " sono a casa!"
+    },
+    {
+        "Testo": "Mentir\u00f2 ogni volta che mi chiederanno Sei single?",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Lascer\u00f2 il mio numero di telefono nel bagno dell'Autogrill",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Pulir\u00f2 l'appartamento almeno una volta a settimana come rito propiziatorio",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Parteciper\u00f2 alle cene danzanti per i single",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Mi dar\u00f2 ai m\u00e9nage \u00e0 trois",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Mi dar\u00f2 ai club priv\u00e9",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Comprer\u00f2 degli spazi pubblicitari 6x3 per pubblicizarmi alle donzelle ",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Smetter\u00f2 di ascoltare Rimmel di De Gregori pensando alla mia ex-ex-ex-ex fidanzata",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Smetter\u00f2 di mettermi i vestiti di quando ero adolescente",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Inizier\u00f2 a partecipare a tutti i trenini in discoteca",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Mi iscriver\u00f2 a una crociera alcolica",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Prender\u00f2 un cane per incontrare amanti dei cani al parco",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Mi dar\u00f2 all'amore mistico divino",
+        "Categoria": "Amore"
+    },
+    {
+        "Testo": "Creer\u00f2 una criptovaluta",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Investir\u00f2 in una criptovaluta tutti i soldi dei miei genitori",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Rapiner\u00f2 due banche",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Aprir\u00f2 un business di clonazione bancomat e carte di credito",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Aprir\u00f2 un conto in un paradiso fiscale",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Far\u00f2 la spesa rovistando tra i rifiuti",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Acquister\u00f2 una magione con vista su un lago svizzero e la affitter\u00f2 ai russi",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Organizzer\u00f2 un traffico internazionale di forcine",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Diventer\u00f2 pilota di aeroplani",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Diventer\u00f2 tassista a New York",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Inizier\u00f2 a raccattare monete ai distributori automatici delle stazioni",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Emigrer\u00f2 a fare il lavapiatti a Londra",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Cercher\u00f2 di far fruttare la Brexit",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Non comprer\u00f2 pi\u00f9 sigarette",
+        "Categoria": " le scroccher\u00f2"
+    },
+    {
+        "Testo": "\u00c8 arrivato il momento di fare lo Youtuber",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Prover\u00f2 a imparare l'arte di fare i pacchi",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Diventer\u00f2 un asso del poker ",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Giocher\u00f2 pi\u00f9 spesso al SuperEnalotto",
+        "Categoria": " obiettivo: sistemone"
+    },
+    {
+        "Testo": "Acquister\u00f2 un biglietto della lotteria di Capodanno",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Andr\u00f2 a giocare alle corse dei cavalli",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "A quanto son dati i reni al mercato nero?",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Far\u00f2 un'assicurazione sulla salute sperando di farmi male per riscuotere il premio",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Andr\u00f2 a fare il cercatore d'oro nelle miniere del Klondike",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Vender\u00f2 cd piratati di Anna Oxa al mercatino rionale",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Mi evolver\u00f2 in un arrotino",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Non acquister\u00f2 pi\u00f9 10 euro a settimana in goleador",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Raccoglier\u00f2 tutte le monete da 1 centesimo che vedr\u00f2 per terra",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Aprir\u00f2 uno studio fotografico per gli hipster",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Far\u00f2 il bagarino ai concerti di Fedez",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Prover\u00f2 a diventare Fashion Blogger",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Creer\u00f2 un paradiso fiscale per attirare Amazon e poi distruggerla per salvare il mondo",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Mi far\u00f2 investire dalle auto per poi fargli causa (se sopravvivo)",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Aprir\u00f2 un fake taxi ma mi far\u00f2 pagare veramente",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Diventer\u00f2 cantante di trap ",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Creer\u00f2 una piattaforma per il gioco d'azzardo in acque internazionali",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Prover\u00f2 a vendere la mia biancheria intima",
+        "Categoria": "Soldi"
+    },
+    {
+        "Testo": "Smetter\u00f2 di bestemmiare di fronte ai miei amici credenti",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Io e il parroco diventeremo amici",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Inizier\u00f2 ad uscire con i colleghi",
+        "Categoria": " basta scuse"
+    },
+    {
+        "Testo": "\u00c8 arrivato il momento dei balli di gruppo",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Brucer\u00f2 il mio divano e la copertina netflix... Si esce!",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Eliminer\u00f2 la mia data di nascita da Facebook per vedere realmente chi si ricorda del mio compleanno",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Iscriver\u00f2 i miei amici a Uomini e Donne",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Inizier\u00f2 a frequentare i gabinetti di lettura",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Offrir\u00f2 consulenza gratutita su come gestire un profilo Tinder",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Proporr\u00f2 ai miei amici di guardare i film belli tipo la corazzata Pot\u00ebmkin",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Non ci picchieremo pi\u00f9 durante il Monopoli",
+        "Categoria": " promesso!"
+    },
+    {
+        "Testo": "Aprir\u00f2 ai Testimoni di Geova",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Aprir\u00f2 ai venditori del Folletto",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Ai genitori dir\u00f2 la verit\u00e0 quando mi faranno vedere i loro neonati",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Quando usciremo la sera",
+        "Categoria": " guider\u00f2 sempre io"
+    },
+    {
+        "Testo": "Mi sbronzer\u00f2 anche per voi",
+        "Categoria": " cari amici"
+    },
+    {
+        "Testo": "Chiamer\u00f2 fra tutti i miei amici",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "La gang non s'infama",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Sistemer\u00f2 tutta la rubrica del mio smartphone",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Smetter\u00f2 di regalare gli smartbox",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Non obietter\u00f2 sulle decisioni che riguardano le vacanze",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Smetter\u00f2 di parlare con il mio cane e prover\u00f2 a parlare con le persone vere",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Far\u00f2 una pulizia contatti per eliminare tutte le persone false",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Dir\u00f2 a tutti che Babbo Natale non esiste",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Dir\u00f2 ai figli dei miei amici che Babbo Natale esiste",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Entrer\u00f2 in una setta psicoreligiosa",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Inizier\u00f2 a frequentare la parrocchia ",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Mi iscriver\u00f2 alle scuole serali ",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Mander\u00f2 un messaggio a tutti i contatti della rubrica di cui non ricordo la faccia",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Rintraccer\u00f2 tutte le persone che ho come amici su Facebook",
+        "Categoria": "Amici"
+    },
+    {
+        "Testo": "Io",
+        "Categoria": " speriamo che me la cavo"
+    },
+    {
+        "Testo": "La risposta \u00e8 42",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Non pu\u00f2 piovere per sempre",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Quello che facciamo tutte le sere Mignolo",
+        "Categoria": " cercare di conquistare il mondo!"
+    },
+    {
+        "Testo": "Pura vida!",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Nel 2020 le macchine dovevano volare",
+        "Categoria": " dicevano"
+    },
+    {
+        "Testo": "Impiccatevi tutti",
+        "Categoria": " grazie :heart:"
+    },
+    {
+        "Testo": "Gli animali sono meglio delle persone",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Fatto il '19",
+        "Categoria": " facciamo anche questo '20"
+    },
+    {
+        "Testo": "Il momento \u00e8 adesso",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Fanculo alla maggioranza",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Se una cosa pu\u00f2 andare male",
+        "Categoria": " andr\u00e0 peggio"
+    },
+    {
+        "Testo": "Siamo tutti schiavi del proprio postino",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Il futuro \u00e8 di chi non ha un passato",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Io della vita non ho capito un cazzo",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Unicorni e potere",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Ho amato Schifomad\u00f2",
+        "Categoria": " non potr\u00f2 amare un baby yoda qualunque"
+    },
+    {
+        "Testo": "Fare o non fare",
+        "Categoria": " non c'\u00e8 provare"
+    },
+    {
+        "Testo": "Io faccio come Baglioni...",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Al mondo ci sono due tipi di persone",
+        "Categoria": " io e voi."
+    },
+    {
+        "Testo": "Le cose si fanno in numero dispari e in 3 si \u00e8 gi\u00e0 in troppi",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Quest'anno sar\u00f2... Devastante!",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Quest'anno sar\u00e0 tutto pazzesco!",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Non \u00e8 tanto il freddo",
+        "Categoria": " \u00e8 l'umidit\u00e0 che ti ammazza"
+    },
+    {
+        "Testo": "L'amore \u00e8 pi\u00f9 bello quando \u00e8 litigarello",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Tachipirina 500 se ne prendi 2 diventa 1000",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Com'\u00e8 bello far l'amore da Trieste in gi\u00f9",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Emanciparsi dal vincolo delle passioni ",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Fare come l'eremita che rinuncia a s\u00e8",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "A facc' ro cazz'",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Sar\u00e0 bello",
+        "Categoria": " bellissimo"
+    },
+    {
+        "Testo": "Quegli operai dovrebbero lavorare meglio su quel pilone...",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Ok Boomer!",
+        "Categoria": "Motto"
+    },
+    {
+        "Testo": "Mi far\u00f2 crescere le branchie",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Smetter\u00f2 di fumare... sigarette",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Smetter\u00f2 di fumare... quelle elettriche",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Punto al trapianto di fegato",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Dar\u00e0 dei soldi a qualche palestra per pulirmi la coscenza",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Smetter\u00f2 di cercare le diagnosi su Google",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Mi convicer\u00f2 che il salmone fa ingrassare",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Smetter\u00f2 di bere le bevande al gusto di th\u00e9 delle macchinette automatiche",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Dir\u00f2 addio alla Nutella... credo",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Mi misurer\u00f2 la pressione ogni settimana",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Cercher\u00f2 di rivendere tutte le scorte di OKI accumulate fino ad oggi",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Dir\u00f2 addio al botulino",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Mi tatuer\u00f2 Ma posso comunque dire che la droga fa male?",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Boicotter\u00f2 tutti i fast food",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Far\u00f2 analizzare la composizione molecolare del Kebab e render\u00f2 pubblici i risultati",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Berr\u00f2 solo birre analcoliche",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Diventer\u00f2 un Guru analcolico",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Mi evolver\u00f2 in un essere astemio",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Cercher\u00f2 di prendere il sole sola a partire dalle 16.00",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Dir\u00f2 basta ai bagni dopo aver mangiato",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Smetter\u00f2 di mettere la maionese nell'insalata",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Manger\u00f2 solo pandoro integrale ",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Manger\u00f2 solo panettone biologico",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Smetter\u00f2 di guardare le serie TV per 12 ore consecutive",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Smetter\u00f2 di guardare i telegiornali della Sera",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Smetter\u00f2 di prendere due tachipirine 500 solo per fare 1000 come la canzone",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Non far\u00f2 brillare tutti insieme i petardi rimasti da capodanno",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Andr\u00f2 dal medico sperando che il Servizio Sanitario Nazionale mi riconosca ancora",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Andr\u00f2 a conoscere il nuovo medico di base",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Mi far\u00f2 le analisi",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Non far\u00f2 pi\u00f9 gare di grappa con gli anziani al circolino ",
+        "Categoria": "Salute"
+    },
+    {
+        "Testo": "Smetter\u00f2 di farmi le diagnosi su Internet",
+        "Categoria": "Salute"
     }
 ]

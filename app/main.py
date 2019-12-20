@@ -27,9 +27,7 @@ ENVIRONMENT = os.environ.get('ENVIRONMENT', 'DEVELOPMENT'),
 @route('/api/random-generate/', method='GET')
 def random_generate():
     categories = [
-        'Amore', 'Soldi',
-        'Amici', 'Sport',
-        'Lavoro', 'Motto'
+        'Amore', 'Soldi', 'Amici', 'Sport', 'Salute', 'Motto'
     ]
     response_dict = {
         "objects" : [],
@@ -57,29 +55,46 @@ def random_generate():
 
 @route('/')
 def index():
+    cta = [
+        'Escimi i buoni propositi', 'Generali adesso!',
+        'Iniziamo!', 'Vai!'
+    ]
+    n_random = random.randint(0, 3)
+    cta_random = cta[n_random]
     return template(
         'views/index.tpl',
         title="Homepage",
+        cta_random = cta_random,
     )
 
+@route('/static/favicon.ico')
+def favicon():
+    print("aaa")
+    return send_static("/favicon.ico")
 
 @route('/<slug>')
 def page(slug):
-    decoded_slug = base64.standard_b64decode(slug).decode()
-    ids_to_search = []
-    resolutions = {}
-
-    resolutions_from_db = db['documents'].find({"_id" :{
-        "$in" : decoded_slug.split('_')
-    }});
+    try:
+        decoded_slug = base64.standard_b64decode(slug).decode()
+        ids_to_search = []
+        resolutions = {}
+        resolutions_from_db = db['documents'].find({"_id" :{
+            "$in" : decoded_slug.split('_')
+        }});
+    except Exception as ex:
+        return template('views/404.tpl')
 
     for resolution in resolutions_from_db:
         resolutions[resolution["Categoria"]] = resolution["Testo"]
 
+    currentUrl = format(request.url)
+    shareTitle = "Buonipropositi 2020"
     return template(
         'views/buonipropositi.tpl',
-        title='Buoni Propositi Randomize',
-        resolutions=resolutions
+        title = 'Buoni Propositi Randomize',
+        resolutions = resolutions,
+        currentUrl = currentUrl,
+        shareTitle = shareTitle
     )
 
 
@@ -95,7 +110,7 @@ def send_image(filename):
 
 @route('/static/<filename:path>')
 def send_static(filename):
-    return static_file(filename, root='/path/to/static/files')
+    return static_file(filename, root='assets')
 
 
 if ENVIRONMENT == "DEVELOPMENT":

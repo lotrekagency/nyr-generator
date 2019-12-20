@@ -1,3 +1,3 @@
 <footer>
-    <script src="/static/js/main.min.js" ></script>
+    <script src="/static/js/custom.min.js" ></script>
 </footer>

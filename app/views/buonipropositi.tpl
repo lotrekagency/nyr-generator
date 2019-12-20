@@ -64,7 +64,7 @@
                                         {{resolutions['Motto']}}
                                     </p>
                                 </div>
-                                <div style="margin-bottom: 1em; position: relative; z-index: 10; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                                <div style="margin-bottom: 1em; position: relative; z-index: 0; display: flex; align-items: center; justify-content: center; flex-direction: column;">
                                     <span class="buonipropositi__share_text">Condividi il tuo motto:</span>
                                     <div class="buonipropositi__cont_social">
                                         <a class="buonipropositi__cont_social--link" href="https://www.facebook.com/sharer.php?u={{ currentUrl }}" target="_blank">
@@ -87,7 +87,7 @@
                         <a href="#" class="buonipropositi__btn" onclick="callAjax()">Genera nuovo proposito <div><span></span></div></a>
                     </div>
                     <div style="width: 100%; display: flex; align-items: flex-end; justify-content: center;">
-                        <span class="buonipropositi__copyright">Copyright ©2015-20 Lotrek S.c.r.l</span>
+                        % include('popup.tpl')
                     </div>
                 </div>
             </div>

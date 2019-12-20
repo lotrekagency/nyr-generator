@@ -53,8 +53,6 @@ def index():
 
 @route('/<slug>')
 def page(slug):
-    print ('SLUG')
-    print (slug)
     decoded_slug = base64.standard_b64decode(slug).decode()
     ids_to_search = []
     resolutions = {}

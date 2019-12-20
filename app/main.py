@@ -1,15 +1,26 @@
 
 import base64
 import bottle
+import os
 import random
+import time
 
 from bottle import run, template, error, route, request, abort, static_file
-from pymongo import Connection
+from pymongo import Connection, errors
+from pymongo.errors import ConnectionFailure
 
+while True:
+    try:
+        connection = Connection(
+            os.environ.get('MONGODB_HOST', 'localhost'),
+            os.environ.get('MONGODB_PORT', 27017),
+        )
+        db = connection.mydatabase
+        break
+    except ConnectionFailure:
+        time.sleep(5)
 
-connection = Connection('localhost', 27017)
-db = connection.mydatabase
-
+DEBUG = os.environ.get('DEBUG', True),
 
 # generare 6 buoni propositi di categorie diverse
 @route('/api/random-generate/', method='GET')
@@ -86,4 +97,10 @@ def send_static(filename):
     return static_file(filename, root='/path/to/static/files')
 
 
-run(host='0.0.0.0', port=8080, reloader=True, debug=True)
+if DEBUG:
+    run(
+        host='0.0.0.0',
+        port=8080,
+        reloader=DEBUG,
+        debug=DEBUG
+    )

@@ -1,0 +1,47 @@
+version: '3'
+services:
+    web:
+        image: nginx:latest
+        restart: always
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./docker/nginx/conf.d:/etc/nginx/conf.d
+            - ./static:/usr/share/nginx/static
+            - ./certificates:/etc/nginx/certificates
+        depends_on:
+            - nyr
+        networks:
+            - nyr-net
+        # version, services, networks, volume
+
+    mongodb:
+        image: mongo:latest
+        environment:
+            - MONGO_DATA_DIR=/data/db
+            - MONGO_LOG_DIR=/dev/null
+        volumes:
+            - ./data/db:/data/db
+        networks:
+            - nyr-net
+        command: mongod --logpath=/dev/null # --quiet
+
+    nyr:
+        build:
+            context: .
+            dockerfile: ./app/Dockerfile
+        volumes:
+            - ./static:/nyr/static
+            - ./media:/nyr/media
+            - ../TEAM_DEV/backups:/nyr/backups
+        networks:
+            - nyr-net
+        depends_on:
+            - mongodb
+        env_file:
+            - ./envs/nyr.env
+
+networks:
+    nyr-net:
+        driver: bridge

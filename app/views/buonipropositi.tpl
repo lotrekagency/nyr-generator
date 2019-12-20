@@ -7,7 +7,7 @@
         <section class="buonipropositi">
             <div class="buonipropositi__container">
                 <div class="buonipropositi__container--section_top">
-                    <h1 class="buonipropositi__title">Buonipropositi.com</h1>
+                    <h1 class="buonipropositi__title">Generatore automatico di buoni propositi</h1>
                 </div>
                 <div class="buonipropositi__container--section_center">
                     <div class="container">

@@ -9,6 +9,7 @@ from bottle import run, template, error, route, request, abort, static_file
 from pymongo import Connection, errors
 from pymongo.errors import ConnectionFailure
 
+
 while True:
     try:
         connection = Connection(
@@ -20,9 +21,9 @@ while True:
     except ConnectionFailure:
         time.sleep(5)
 
-DEBUG = os.environ.get('DEBUG', True),
+ENVIRONMENT = os.environ.get('ENVIRONMENT', 'DEVELOPMENT'),
 
-# generare 6 buoni propositi di categorie diverse
+
 @route('/api/random-generate/', method='GET')
 def random_generate():
     categories = [
@@ -97,10 +98,19 @@ def send_static(filename):
     return static_file(filename, root='/path/to/static/files')
 
 
-if DEBUG:
+if ENVIRONMENT == "DEVELOPMENT":
+    print ("Running in DEBUG mode with dev server....")
     run(
         host='0.0.0.0',
         port=8080,
         reloader=DEBUG,
         debug=DEBUG
+    )
+else:
+    print ("Running with gunicorn server....")
+    run(
+        host='0.0.0.0',
+        port=8080,
+        server='gunicorn',
+        workers=4
     )

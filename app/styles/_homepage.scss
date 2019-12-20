@@ -1,0 +1,229 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+@media(max-width: 576px){
+    .home{
+        &__title{
+            font-size: 35px!important;
+        }
+        &__btn{
+            font-size: 14px!important;
+            span{
+                width: 25px!important;
+                height: 4px!important;
+                &:after{
+                    transform: rotate(-45deg) translate(6px,13px)!important;
+                    width: 15px!important;
+                    height: 4px!important;
+                }
+                &:before{
+                    transform: rotate(45deg) translate(7px,-12px)!important;
+                    width: 15px!important;
+                    height: 4px!important;
+                }
+            }
+        }
+        &__copyright{
+            padding-top: 1.5em!important;
+        }
+        &__description{
+            padding-bottom: 0!important;
+        }
+    }
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(116.87deg, #8611E1 -23.51%, #BBDDC7 85.65%);
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    &__gradient_top{
+        background: linear-gradient(0.37deg, rgba(255, 255, 255, 0.4) 71.55%, rgba(255, 255, 255, 0) 99.11%);
+        height: 65%;
+        width: 100%;
+    }
+    &__gradient_bottom{
+        background: rgba(255, 255, 255, 0.7);
+        height: 35%;
+        width: 100%;
+    }
+    &__people{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &__bg_people{
+            width: 100%;
+            height: 100%;
+            background-image: url("/images/group_people.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+    &__container_text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        &--section_top{
+            text-align: center;
+            padding: 2.5em 0em;
+            width: 100%;
+        }
+        &--section_bottom{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    &__title{
+        font-family: 'Passion One';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 46px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    &__description{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #4E0292;
+        padding-bottom: 1.5em;
+        b{
+            font-weight: 700;
+        }
+    }
+    &__btn{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        background-color: #FF006B;
+        border-radius: 85px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        padding: 0.8em 2em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        transition: 0.5s ease-in-out;
+        &:hover{
+            color: #FF006B;
+        }
+        &:after{
+            background: #fff;
+            content: '';
+            position: absolute;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 0;
+            transition: 0.5s ease-in-out;
+            border-radius: 85px;
+            background-color: #fff;
+            z-index: -1;
+        }
+        .arrow{
+            margin-left: 1em;
+            span{
+                width: 30px;
+                height: 5px;
+                background-color: #fff;
+                display: block;
+                border-radius: 6px;
+                position: relative;
+                z-index: 2;
+                transition: 0.5s ease-in-out;
+                &:before{
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 5px;
+                    background-color: #fff;
+                    transform: rotate(45deg) translate(6px,-14px);
+                    border-radius: 6px;
+                    position: absolute;
+                    left: 0%;
+                    transition: 0.5s ease-in-out;
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 5px;
+                    background-color: #fff;
+                    transform: rotate(-45deg) translate(6px,14px);
+                    border-radius: 6px;
+                    position: absolute;
+                    left: 0%;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+    &__copyright{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        color: #626262;
+        display: block;
+        padding-top: 3em;
+        padding-bottom: 1em;
+    }
+}
+
+.home__btn:hover:after{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.home__btn:hover .arrow span{
+    background-color: #FF006B;
+    transition: 0.5s ease-in-out;
+}
+
+.home__btn:hover .arrow span:before{
+    background-color: #FF006B;
+    transition: 0.5s ease-in-out;
+}
+
+.home__btn:hover .arrow span:after{
+    background-color: #FF006B;
+    transition: 0.5s ease-in-out;
+}

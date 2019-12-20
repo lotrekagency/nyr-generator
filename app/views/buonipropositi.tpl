@@ -16,7 +16,7 @@
                                 <span class="buonipropositi__subtitle">I buoni propositi del mio 2020 sono esattamente questi:</span>
                                 <div class="buonipropositi__proposito">
                                     <div class="buonipropositi__border_left">
-                                        <img src="/images/heart.png" />
+                                        <img src="/static/images/heart.png" />
                                     </div>
                                     <p class="buonipropositi__proposito--paragraph" id="heart">
                                         {{resolutions['Amore']}}
@@ -24,7 +24,7 @@
                                 </div>
                                 <div class="buonipropositi__proposito">
                                     <div class="buonipropositi__border_left">
-                                        <img src="/images/sport.png" />
+                                        <img src="/static/images/sport.png" />
                                     </div>
                                     <p class="buonipropositi__proposito--paragraph" id="sport">
                                         {{resolutions['Sport']}}
@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="buonipropositi__proposito">
                                     <div class="buonipropositi__border_left">
-                                        <img src="/images/friends.png" />
+                                        <img src="/static/images/friends.png" />
                                     </div>
                                     <p class="buonipropositi__proposito--paragraph" id="friends">
                                         {{resolutions['Amici']}}
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="buonipropositi__proposito">
                                     <div class="buonipropositi__border_left">
-                                        <img src="/images/health.png" />
+                                        <img src="/static/images/health.png" />
                                     </div>
                                     <p class="buonipropositi__proposito--paragraph" id="health">
                                         {{resolutions['Salute']}}
@@ -48,7 +48,7 @@
                                 </div>
                                 <div class="buonipropositi__proposito">
                                     <div class="buonipropositi__border_left">
-                                        <img src="/images/money.png" />
+                                        <img src="/static/images/money.png" />
                                     </div>
                                     <p class="buonipropositi__proposito--paragraph" id="soldi">
                                         {{resolutions['Soldi']}}
@@ -68,13 +68,13 @@
                                     <span class="buonipropositi__share_text">Condividi il tuo motto:</span>
                                     <div class="buonipropositi__cont_social">
                                         <a class="buonipropositi__cont_social--link" href="https://www.facebook.com/sharer.php?u={{ currentUrl }}" target="_blank">
-                                            <img src="/images/facebook.png" />
+                                            <img src="/static/images/facebook.png" />
                                         </a>
                                         <a class="buonipropositi__cont_social--link" href="https://www.linkedin.com/shareArticle?mini=true&url={{ currentUrl }}&title={{ shareTitle }}&summary={{ resolutions['Motto'] }}&source=LinkedIn" target="_blank">
-                                            <img src="/images/linkedin.png" />
+                                            <img src="/static/images/linkedin.png" />
                                         </a>
                                         <a class="buonipropositi__cont_social--link" href="https://twitter.com/intent/tweet?text={{ resolutions['Motto'] }}&hashtags=buonipropositi2020&url={{ currentUrl }}&original_referer=" target="_blank">
-                                            <img src="/images/twitter.png" />
+                                            <img src="/static/images/twitter.png" />
                                         </a>
                                     </div>
                                 </div>

@@ -23,8 +23,6 @@ def random_generate():
     for category in categories:
         entities = db['documents'].find({'Categoria':category})
         count = db['documents'].find({'Categoria':category}).count()
-        print(count)
-        print(category)
         n_random = random.randint(1,count)
         i = 0
         for entity in entities:
@@ -55,19 +53,22 @@ def index():
         cta_random = cta_random,
     )
 
-@route('/favicon.ico')
+@route('/static/favicon.ico')
 def favicon():
     print("aaa")
+    return send_static("/favicon.ico")
     
 @route('/<slug>')
 def page(slug):
-    decoded_slug = base64.standard_b64decode(slug).decode()
-    ids_to_search = []
-    resolutions = {}
-
-    resolutions_from_db = db['documents'].find({"_id" :{
-        "$in" : decoded_slug.split('_')
-    }});
+    try:
+        decoded_slug = base64.standard_b64decode(slug).decode()
+        ids_to_search = []
+        resolutions = {}
+        resolutions_from_db = db['documents'].find({"_id" :{
+            "$in" : decoded_slug.split('_')
+        }});
+    except Exception as ex:        
+        return template('views/404.tpl')
 
     for resolution in resolutions_from_db:
         resolutions[resolution["Categoria"]] = resolution["Testo"]

@@ -1,13 +1,14 @@
 <html>
     
     % include('head.tpl')
+    % include('meta_index.tpl')
 
     <body>
         <div class="home">
             <div class="home__gradient_top"></div>
             <div class="home__gradient_bottom"></div>
             <div class="home__people">
-                <div id="bg_people" class="home__people__bg_people"></div>
+                <div id="bg_people" class="home__people__bg_people" style="background-image: url('/static/images//group_people.png')"></div>
             </div>
             <div class="home__container_text">
                 <div class="home__container_text--section_top">

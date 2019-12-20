@@ -21,7 +21,9 @@
                         <a href="#" class="error__btn" onclick="callAjax()">Scopri un buon proposito<div class="arrow"><span></span></div></a>
                     </div>
                 </div>
-                % include('popup.tpl')
+                <div style="z-index: 2">
+                    % include('popup.tpl')
+                </div>
             </div>
             <div class="error__people">
                 <div id="bg_people" class="error__people__bg_people" style="background-image: url('/static/images//group_people.png')"></div>

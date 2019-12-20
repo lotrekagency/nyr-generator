@@ -32,9 +32,7 @@ services:
             context: .
             dockerfile: ./app/Dockerfile
         volumes:
-            - ./static:/nyr/static
-            - ./media:/nyr/media
-            - ../TEAM_DEV/backups:/nyr/backups
+            - ./static:/app/assets
         networks:
             - nyr-net
         depends_on:

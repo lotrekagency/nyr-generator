@@ -21,9 +21,9 @@ while True:
     except ConnectionFailure:
         time.sleep(5)
 
-ENVIRONMENT = os.environ.get('ENVIRONMENT', 'DEVELOPMENT'),
+ENVIRONMENT = os.environ.get('ENVIRONMENT', 'DEVELOPMENT')
 
-
+print (ENVIRONMENT)
 @route('/api/random-generate/', method='GET')
 def random_generate():
     categories = [
@@ -67,10 +67,6 @@ def index():
         cta_random = cta_random,
     )
 
-@route('/static/favicon.ico')
-def favicon():
-    print("aaa")
-    return send_static("/favicon.ico")
 
 @route('/<slug>')
 def page(slug):
@@ -103,23 +99,27 @@ def error404(error):
     return template('views/404.tpl')
 
 
-@route('/images/<filename:re:.*\.png>')
-def send_image(filename):
-    return static_file(filename, root='images', mimetype='image/png')
-
-
-@route('/static/<filename:path>')
-def send_static(filename):
-    return static_file(filename, root='assets')
-
-
 if ENVIRONMENT == "DEVELOPMENT":
+
+    @route('/images/<filename:re:.*\.png>')
+    def send_image(filename):
+        return static_file(filename, root='images', mimetype='image/png')
+
+    @route('/static/<filename:path>')
+    def send_static(filename):
+        return static_file(filename, root='assets')
+
+    @route('/static/favicon.ico')
+    def favicon():
+        print("aaa")
+        return send_static("/favicon.ico")
+
     print ("Running in DEBUG mode with dev server....")
     run(
         host='0.0.0.0',
         port=8080,
-        reloader=DEBUG,
-        debug=DEBUG
+        reloader=True,
+        debug=True
     )
 else:
     print ("Running with gunicorn server....")
@@ -127,5 +127,7 @@ else:
         host='0.0.0.0',
         port=8080,
         server='gunicorn',
-        workers=4
+        workers=4,
+        reloader=False,
+        debug=False
     )

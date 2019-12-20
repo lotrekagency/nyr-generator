@@ -29,10 +29,8 @@ services:
 
     nyr:
         build:
-            context: .
-            dockerfile: ./app/Dockerfile
-        volumes:
-            - ./static:/app/assets
+            context: ./app
+            dockerfile: ./Dockerfile
         networks:
             - nyr-net
         depends_on:

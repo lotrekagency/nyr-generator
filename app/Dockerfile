@@ -6,35 +6,41 @@ RUN yarn global add gulp
 
 RUN mkdir /feapp
 
-# WORKDIR /feapp
+WORKDIR /feapp
 
-# COPY package.json /feapp/
-# COPY webpack.config.js /feapp/
-# COPY public/ /feapp/public/
-# RUN yarn
-# RUN yarn build
+COPY package.json /feapp/
+
+COPY scripts/ /feapp/scripts/
+COPY styles/ /feapp/styles/
+COPY gulpfile.js /feapp/
+
+RUN yarn
+
+RUN gulp
+
+RUN pwd
+
+RUN ls
+
+RUN ls assets
+
+# Build BE
 
 FROM python:3.6
 
-
 ENV PYTHONUNBUFFERED 1
 
-
-# create root directory for our project in the container
 RUN mkdir /app
 
-# Set the working directory to /app
 WORKDIR /app
-
 
 COPY . /app/
 
 RUN pip install gunicorn
 
-RUN pip install -r ./app/requirements.txt
+RUN pip install -r ./requirements.txt
 
-
-COPY --from=build-fe /feapp/build /app/build
+COPY --from=build-fe /feapp/assets /app/assets
 
 # RUN python manage.py compilemessages
-CMD cd app && python main.py
+CMD python main.py

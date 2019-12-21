@@ -1,9 +1,13 @@
+import os
 import json
 from pymongo import Connection
 
 from generate_json import to_JSON, convert_write_json
 
-connection = Connection('localhost', 27017)
+connection = Connection(
+    os.environ.get('MONGODB_HOST', 'localhost'),
+    os.environ.get('MONGODB_PORT', 27017),
+)
 db = connection.mydatabase
 connection.drop_database('mydatabase')
 

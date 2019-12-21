@@ -12,6 +12,7 @@ COPY package.json /feapp/
 
 COPY scripts/ /feapp/scripts/
 COPY styles/ /feapp/styles/
+COPY images/ /feapp/images/
 COPY gulpfile.js /feapp/
 
 RUN yarn

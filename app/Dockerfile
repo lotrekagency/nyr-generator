@@ -42,5 +42,4 @@ RUN pip install -r ./requirements.txt
 
 COPY --from=build-fe /feapp/assets /app/assets
 
-# RUN python manage.py compilemessages
-CMD python main.py
+CMD cp -R assets/. compiled_assets/ && python main.py

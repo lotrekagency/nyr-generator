@@ -5,6 +5,7 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var cleanCSS = require('gulp-clean-css');
 
+
 var paths = {
   styles: {
     src: 'styles/custom.scss',
@@ -14,6 +15,16 @@ var paths = {
     src: 'scripts/custom.js',
     dest: 'assets/js'
   },
+  images: {
+    src: 'images/**/*',
+    dest: 'assets/images'
+  },
+};
+
+function images() {
+    return gulp
+        .src(paths.images.src)
+        .pipe(gulp.dest(paths.images.dest));
 };
 
 function styles() {
@@ -46,8 +57,8 @@ function watch() {
   gulp.watch(paths.styles.src, styles);
 }
 
-var dev = gulp.parallel(styles, scripts, watch);
-var build = gulp.parallel(styles, scripts);
+var dev = gulp.parallel(styles, scripts, watch, images);
+var build = gulp.parallel(styles, scripts, images);
 
 
 gulp.task('default', build);

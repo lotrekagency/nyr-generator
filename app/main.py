@@ -56,8 +56,10 @@ def random_generate():
 @route('/')
 def index():
     cta = [
-        'Escimi i buoni propositi', 'Generali adesso!',
-        'Iniziamo!', 'Vai!'
+        'Escimi i buoni propositi',
+        'Generali adesso!',
+        'Iniziamo!',
+        'Vai!'
     ]
     n_random = random.randint(0, 3)
     cta_random = cta[n_random]
@@ -127,7 +129,7 @@ else:
         host='0.0.0.0',
         port=8080,
         server='gunicorn',
-        workers=4,
+        workers=os.environ.get('WORKERS', 8),,
         reloader=False,
         debug=False
     )

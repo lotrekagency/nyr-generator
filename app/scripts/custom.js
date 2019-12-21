@@ -14,7 +14,11 @@ function callAjax() {
             window.location.href = "/" + obj.slug;
         }
     };
-    xhttp.open("GET", "/api/random-generate/", true);
+    xhttp.open(
+        "GET",
+        "/api/random-generate/" + "?c=" + Date.now(),
+        true
+    );
     xhttp.send();
 }
 

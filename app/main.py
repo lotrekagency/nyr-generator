@@ -23,7 +23,6 @@ while True:
 
 ENVIRONMENT = os.environ.get('ENVIRONMENT', 'DEVELOPMENT')
 
-print (ENVIRONMENT)
 @route('/api/random-generate/', method='GET')
 def random_generate():
     categories = [
@@ -66,7 +65,17 @@ def index():
     return template(
         'views/index.tpl',
         title="Homepage",
-        cta_random = cta_random,
+        cta_random=cta_random,
+    )
+
+
+@route('/robots.txt')
+def robotstxt():
+    from bottle import response
+    response.content_type = 'text/plain;'
+    return template(
+        'views/robots.tpl',
+        disallow='/' if ENVIRONMENT != "PRODUCTION" else ''
     )
 
 
@@ -129,7 +138,7 @@ else:
         host='0.0.0.0',
         port=8080,
         server='gunicorn',
-        workers=os.environ.get('WORKERS', 8),,
+        workers=os.environ.get('WORKERS', 8),
         reloader=False,
         debug=False
     )

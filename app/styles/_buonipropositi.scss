@@ -1,8 +1,8 @@
 @media(max-width: 576px){
     body{
-        overflow: visible;
-        height: auto;
-        width: 100%;
+        overflow: visible!important;
+        height: auto!important;
+        width: 100%!important;
     }
     .buonipropositi{
         height: auto!important;
@@ -19,6 +19,18 @@
         &__title{
             font-size: 35px!important;
         }
+        &__cont_social{
+            width: 50%!important;
+        }
+        &__proposito{
+            &--paragraph{
+                left: 12%!important;
+                top: 5%!important;
+                line-height: 20px!important;
+                text-align: left!important;
+                font-size: 13px!important;
+            }
+        }
     }
     &__border_left{
         width: 14%!important;
@@ -26,14 +38,7 @@
             width: 20px!important;
         }
     }
-    &__proposito{
-        &--paragraph{
-            left: 16%!important;
-            top: 10%!important;
-            line-height: 20px!important;
-            text-align: left!important;
-        }
-    }
+    
     &__motto{
         &--paragraph{
             font-size: 16px!important;
@@ -55,6 +60,18 @@
     justify-content: space-around;
     flex-direction: column;
     position: relative;
+    &__new{
+        width: 100%;
+        margin-right: 5em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @media(max-width: 576px){
+            justify-content: center!important;
+            padding-left: 2em!important;
+            margin-right: 0!important;
+        }
+    }
     &__container{
         position: absolute;
         top: 0;
@@ -74,7 +91,6 @@
         }
         &--section_bottom{
             width: 100%;
-            background: rgba(255, 255, 255, 0.7);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -82,6 +98,9 @@
             padding-top: 1.5em;
             position: fixed;
             bottom: 0;
+            @media(max-width: 576px){
+                background: rgba(255, 255, 255, 0.7);
+            }
         }
         &--section_center{
             width: 100%;

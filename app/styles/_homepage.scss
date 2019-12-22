@@ -11,7 +11,9 @@ body {
 @media(max-width: 576px){
     .home{
         &__title{
-            font-size: 35px!important;
+            font-size: 30px!important;
+            padding-left: 0.5em!important;
+            padding-right: 0.5em!important;
         }
         &__btn{
             font-size: 14px!important;
@@ -35,6 +37,16 @@ body {
         }
         &__description{
             padding-bottom: 0!important;
+            font-size: 14px!important;
+        }
+        &__container_text{
+            &--section_top{
+                padding: 0.5em 0!important;
+            }
+        }
+        &__people{
+            top: 4%!important;
+            height: 90%!important;
         }
     }
 }

@@ -75,19 +75,19 @@
     position: relative;
     &:before{
         @media(min-width: 2100px){
-            width: 50%;
+            width: 20%;
             height: 80%;
         }
         @media(max-width: 2000px){
-            width: 60%;
+            width: 20%;
             height: 80%;
         }
         @media(max-width: 1820px){
-            width: 50%;
+            width: 20%;
             height: 70%;
         }
         @media(max-width: 1620px){
-            width: 70%;
+            width: 20%;
             height: 60%;
             left: 4%;
         }
@@ -104,7 +104,7 @@
         background-repeat: no-repeat;
         position: absolute;
         z-index: 1;
-        width: 85%;
+        width: 20%;
         height: 80%;
         bottom: 4%;
         left: 6%;

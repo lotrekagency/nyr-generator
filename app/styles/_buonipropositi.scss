@@ -1,4 +1,4 @@
-@media(max-height: 760px) and (min-width: 576px){
+@media(max-height: 790px) and (min-width: 576px){
     .buonipropositi{
         &__title{
             font-size: 25px!important;
@@ -226,8 +226,8 @@
     &__share_text{
         font-family: 'Montserrat';
         font-style: normal;
-        font-weight: 400;
-        font-size: 11px;
+        font-weight: bold;
+        font-size: 13px;
         line-height: 13px;
         text-align: center;
         color: #3B2645;
@@ -237,17 +237,80 @@
         display: block;
     }
     &__cont_social{
-        width: 26%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        &--link{
+        padding-top: 0.5em;
+        // &--link{
+        //     display: flex;
+        //     flex: 1 0 auto;
+        //     align-items: center;
+        //     justify-content: center;
+        // }
+        &--col6{
             display: flex;
-            flex: 1 0 auto;
             align-items: center;
             justify-content: center;
+            padding-left: 3em;
+            padding-right: 3em;
         }
+        &--facebook{
+            background: linear-gradient(180deg, #4DACF8 0%, #2466D9 100%);
+            border-radius: 60px;
+            width: 100%;
+            font-family: 'Montserrat';
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 13px;
+            text-align: center;
+            color: #FFFFFF;
+            height: 50px;
+            padding-left: 3em;
+            padding-right: 3em;
+            &:hover{
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+            img{
+                margin-right: 2em;
+                width: 20px;
+                padding-top: 1em;  
+            }
+        }
+        &--whatsapp{
+            background: linear-gradient(180deg, #44EC62 0%, #1DCA40 100%);
+            border-radius: 60px;
+            width: 100%;
+            font-family: 'Montserrat';
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 13px;
+            text-align: center;
+            color: #FFFFFF;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 3em;
+            padding-right: 3em;
+            &:hover{
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+            img{
+                margin-right: 2em;
+                width: 32px;
+            }
+        }
+    }
+    &__btn_facebook{
+        
     }
     &__subtitle{
         font-family: 'Montserrat';

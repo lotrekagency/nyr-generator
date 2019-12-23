@@ -66,9 +66,9 @@
                                     </p>
                                 </div>
                                 <div class="buonipropositi__share">
-                                    <span class="buonipropositi__share_text">Condividi il tuo motto:</span>
+                                    <span class="buonipropositi__share_text">Fallo girare!</span>
                                     <div class="buonipropositi__cont_social">
-                                        <a class="buonipropositi__cont_social--link" href="https://www.facebook.com/sharer.php?u={{ currentUrl }}" target="_blank">
+                                        <!--<a class="buonipropositi__cont_social--link" href="https://www.facebook.com/sharer.php?u={{ currentUrl }}" target="_blank">
                                             <img src="/static/images/facebook.png" />
                                         </a>
                                         <a class="buonipropositi__cont_social--link" href="https://www.linkedin.com/shareArticle?mini=true&url={{ currentUrl }}&title={{ shareTitle }}&summary={{ resolutions['Motto'] }}&source=LinkedIn" target="_blank">
@@ -76,7 +76,13 @@
                                         </a>
                                         <a class="buonipropositi__cont_social--link" href="https://twitter.com/intent/tweet?text={{ resolutions['Motto'] }}&hashtags=buonipropositi2020&url={{ currentUrl }}&original_referer=" target="_blank">
                                             <img src="/static/images/twitter.png" />
-                                        </a>
+                                        </a>-->
+                                        <div class="buonipropositi__cont_social--col6">
+                                            <a class="buonipropositi__cont_social--facebook" href="https://www.facebook.com/sharer.php?u={{ currentUrl }}" target="_blank" ><img src="/static/images/facebook.png" />Condividi con i tuoi amici!</a>
+                                        </div>
+                                        <div class="buonipropositi__cont_social--col6">
+                                            <a class="buonipropositi__cont_social--whatsapp" href="https://api.whatsapp.com/send?phone=&text={{ currentUrl }}" target="_blank" ><img src="/static/images/whatsapp.png" />Condividi con i tuoi amici!</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

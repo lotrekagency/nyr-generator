@@ -55,19 +55,20 @@
             }
         }
         &__proposito{
+            height: 65px!important;
             &--paragraph{
-                left: 12%!important;
+                left: 16%!important;
                 top: 5%!important;
                 line-height: 20px!important;
                 text-align: left!important;
                 font-size: 13px!important;
             }
         }
-    }
-    &__border_left{
-        width: 14%!important;
-        img{
-            width: 20px!important;
+        &__border_left{
+            width: 14%!important;
+            img{
+                width: 20px!important;
+            }
         }
     }
     

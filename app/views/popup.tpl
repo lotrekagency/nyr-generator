@@ -1,5 +1,3 @@
-<a href="#" class="home__copyright" id="credits">A proposito dei buoni propositi...</a>
-
 <div id="popup_credits" class="modal">
     <div class="modal__content">
         <div class="modal__hero">
@@ -31,7 +29,7 @@
             </ul>
         </div>
         <div class="modal__by">
-            <span>LOTRèK DIGITAL AGENCY</span>
+            <a href="https://www.lotrek.it/" target="_blank">LOTRèK DIGITAL AGENCY</a>
         </div>
     </div>
 </div>

@@ -8,7 +8,7 @@ import time
 from bottle import run, template, error, route, request, abort, static_file
 from pymongo import Connection, errors
 from pymongo.errors import ConnectionFailure
-from urllib.parse import urlparse
+from utils.utils import get_domain
 
 
 while True:
@@ -63,10 +63,15 @@ def index():
     ]
     n_random = random.randint(0, 3)
     cta_random = cta[n_random]
+
+    currentUrl = format(request.url)
+    domain = get_domain(currentUrl)
+
     return template(
         'views/index.tpl',
         title="Homepage",
         cta_random=cta_random,
+        domain=domain,
     )
 
 
@@ -97,8 +102,7 @@ def page(slug):
 
     currentUrl = format(request.url)
 
-    parsed_uri = urlparse(currentUrl)
-    domain = '{uri.scheme}://{uri.netloc}/'.format(uri=parsed_uri)
+    domain = get_domain(currentUrl)
     shareTitle = "Buonipropositi 2020"
     return template(
         'views/buonipropositi.tpl',

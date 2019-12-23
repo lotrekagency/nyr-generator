@@ -8,6 +8,7 @@ import time
 from bottle import run, template, error, route, request, abort, static_file
 from pymongo import Connection, errors
 from pymongo.errors import ConnectionFailure
+from urllib.parse import urlparse
 
 
 while True:
@@ -95,13 +96,17 @@ def page(slug):
         resolutions[resolution["Categoria"]] = resolution["Testo"]
 
     currentUrl = format(request.url)
+
+    parsed_uri = urlparse(currentUrl)
+    domain = '{uri.scheme}://{uri.netloc}/'.format(uri=parsed_uri)
     shareTitle = "Buonipropositi 2020"
     return template(
         'views/buonipropositi.tpl',
         title = 'Buoni Propositi Randomize',
         resolutions = resolutions,
         currentUrl = currentUrl,
-        shareTitle = shareTitle
+        shareTitle = shareTitle,
+        domain = domain,
     )
 
 

@@ -38,8 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if(window.location.pathname !== "/"){
     setTimeout(function(){
       modalSharer.style.display = "block";
-      
-    },2000);
+    },15000);
   }
 });
 

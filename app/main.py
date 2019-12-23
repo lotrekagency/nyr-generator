@@ -72,6 +72,7 @@ def index():
         title="Homepage",
         cta_random=cta_random,
         domain=domain,
+        currentUrl = currentUrl
     )
 
 

@@ -11,6 +11,12 @@
         }
     }
 }
+
+@media(max-height: 790px) and (min-width: 576px){
+    .buonipropositi__subtitle{
+        display: none!important;
+    }
+}
 @media(max-width: 576px){
     body{
         overflow: visible!important;

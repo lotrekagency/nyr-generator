@@ -8,6 +8,17 @@ body {
     overflow: hidden;
 }
 
+@media(max-height: 780px) and (min-width: 576px){
+    .home{
+        &__description{
+            padding-bottom: 0.5em!important;
+        }
+        &__btn{
+            margin-bottom: 0.5em!important;
+        }
+    }
+}
+
 @media(max-width: 576px){
     .home{
         &__title{
@@ -153,6 +164,10 @@ body {
         overflow: hidden;
         z-index: 2;
         transition: 0.5s ease-in-out;
+        margin-bottom: 2em;
+        @media(max-width: 576px){
+            margin-bottom: 0!important;
+        }
         &:hover{
             color: #FF006B;
         }
@@ -215,7 +230,7 @@ body {
         line-height: 12px;
         color: #626262;
         display: block;
-        padding-top: 3em;
+        padding-top: 1em;
         padding-bottom: 1em;
     }
 }

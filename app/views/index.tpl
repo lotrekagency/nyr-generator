@@ -17,6 +17,7 @@
                 <div class="home__container_text--section_bottom">
                     <p class="home__description">È tempo di pensare ai <b>buoni propositi per il 2020</b>. Risparmiati la fatica e fatteli dare da noi, freschi e completamente a caso.</p>
                     <a href="#" class="home__btn" onclick="callAjax()">{{ cta_random }}<div class="arrow"><span></span></div></a>
+                        <a href="#" class="home__copyright" id="credits">A proposito dei buoni propositi...</a>
                         % include('popup.tpl')
                 </div>
             </div>

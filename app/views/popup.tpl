@@ -1,5 +1,3 @@
-<a href="#" class="home__copyright" id="credits">A proposito dei buoni propositi...</a>
-
 <div id="popup_credits" class="modal">
     <div class="modal__content">
         <div class="modal__hero">

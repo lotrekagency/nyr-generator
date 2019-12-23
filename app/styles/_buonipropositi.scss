@@ -1,3 +1,16 @@
+@media(max-height: 760px) and (min-width: 576px){
+    .buonipropositi{
+        &__title{
+            font-size: 25px!important;
+        }
+        &__motto{
+            padding: 14px!important;
+        }
+        &__subtitle{
+            padding-bottom: 0!important;
+        }
+    }
+}
 @media(max-width: 576px){
     body{
         overflow: visible!important;
@@ -60,6 +73,42 @@
     justify-content: space-around;
     flex-direction: column;
     position: relative;
+    &:before{
+        @media(min-width: 2100px){
+            width: 50%;
+            height: 80%;
+        }
+        @media(max-width: 2000px){
+            width: 60%;
+            height: 80%;
+        }
+        @media(max-width: 1820px){
+            width: 50%;
+            height: 70%;
+        }
+        @media(max-width: 1620px){
+            width: 70%;
+            height: 60%;
+            left: 4%;
+        }
+        @media(max-width: 1310px){
+            display: none;
+        }
+        @media(max-width: 576px){
+            display: none;
+        }
+        content: "";
+        display: block;
+        background-image: url("/images/family.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1;
+        width: 85%;
+        height: 80%;
+        bottom: 4%;
+        left: 6%;
+    }
     &__new{
         width: 100%;
         margin-right: 5em;
@@ -71,6 +120,14 @@
             padding-left: 2em!important;
             margin-right: 0!important;
         }
+    }
+    &__share{
+        margin-bottom: 1em;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     &__container{
         position: absolute;
@@ -98,8 +155,9 @@
             padding-top: 1.5em;
             position: fixed;
             bottom: 0;
-            @media(max-width: 576px){
-                background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.7);
+            @media(max-height: 760px) and (min-width: 576px){
+                background: unset;
             }
         }
         &--section_center{
@@ -244,7 +302,7 @@
         text-transform: uppercase;
         position: relative;
         overflow: hidden;
-        z-index: 2;
+        z-index: 99;
         &:after{
             background: #fff;
             content: '';

@@ -20,6 +20,9 @@
         @media(max-width: 576px){
             width: 75%!important;
         }
+        @media(max-height: 780px) and (min-width: 576px){
+            margin: 6% auto!important;
+        }
     }
     &__hero{
         display: flex;

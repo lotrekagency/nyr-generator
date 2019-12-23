@@ -25,13 +25,6 @@ function callAjax() {
   xhttp.send();
 }
 
-var spanClose = document.getElementsByClassName("sharer__close")[0];
-var modalSharer = document.getElementById("popup_sharer");
-
-spanClose.onclick = function() {
-  modalSharer.style.display = "none";
-}
-
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('resize', move);
   window.addEventListener('mousemove', move);
@@ -42,8 +35,15 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+if(window.location.pathname !== "/"){
+  var spanClose = document.getElementsByClassName("sharer__close")[0];
+  spanClose.onclick = function() {
+    modalSharer.style.display = "none";
+  }
+}
 
 
+var modalSharer = document.getElementById("popup_sharer");
 var modal = document.getElementById("popup_credits");
 var btn = document.getElementById("credits");
 var span = document.getElementsByClassName("modal__close")[0];
@@ -60,7 +60,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-  if (event.target == modalSharer) {
+  if (event.target == modalSharer && window.location.pathname !== "/") {
     modalSharer.style.display = "none";
   }
 }

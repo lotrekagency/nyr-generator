@@ -4,6 +4,7 @@
     % include('meta.tpl')
     
     <body>
+        % include('tagmanager.tpl')
         <section class="buonipropositi">
             <div class="buonipropositi__container">
                 <div class="buonipropositi__container--section_top">

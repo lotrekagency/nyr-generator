@@ -328,9 +328,6 @@
             }
         }
     }
-    &__btn_facebook{
-        
-    }
     &__subtitle{
         font-family: 'Montserrat';
         font-style: normal;
@@ -384,7 +381,7 @@
         text-transform: uppercase;
         position: relative;
         overflow: hidden;
-        z-index: 99;
+        z-index: 6;
         &:after{
             background: #fff;
             content: '';

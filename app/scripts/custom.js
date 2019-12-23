@@ -25,10 +25,25 @@ function callAjax() {
   xhttp.send();
 }
 
+var spanClose = document.getElementsByClassName("sharer__close")[0];
+var modalSharer = document.getElementById("popup_sharer");
+
+spanClose.onclick = function() {
+  modalSharer.style.display = "none";
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('resize', move);
   window.addEventListener('mousemove', move);
+  if(window.location.pathname !== "/"){
+    setTimeout(function(){
+      modalSharer.style.display = "block";
+      
+    },2000);
+  }
 });
+
+
 
 var modal = document.getElementById("popup_credits");
 var btn = document.getElementById("credits");
@@ -45,5 +60,8 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+  if (event.target == modalSharer) {
+    modalSharer.style.display = "none";
   }
 }

@@ -4,6 +4,8 @@
     % include('meta_index.tpl')
 
     <body>
+        % include('tagmanager.tpl')
+        
         <div class="home">
             <div class="home__gradient_top"></div>
             <div class="home__gradient_bottom"></div>

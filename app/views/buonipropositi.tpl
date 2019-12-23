@@ -1,7 +1,6 @@
 <html>
     
     % include('head.tpl')
-    % include('meta.tpl')
     
     <body>
         % include('tagmanager.tpl')

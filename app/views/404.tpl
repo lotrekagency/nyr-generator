@@ -1,7 +1,6 @@
 <html>
     
-    % include('head.tpl')
-    % include('meta_index.tpl')
+    % include('head404.tpl')
 
     <body>
         <div class="error">

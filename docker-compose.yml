@@ -33,6 +33,7 @@ services:
             dockerfile: ./Dockerfile
         volumes:
             - ./static:/app/compiled_assets
+            - ./app/files:/app/files
         networks:
             - nyr-net
         depends_on:

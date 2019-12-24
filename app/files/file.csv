@@ -1,7 +1,7 @@
 Testo,Categoria
 Smetterò di bestemmiare di fronte ai miei amici credenti,Amici
 Io e il parroco diventeremo amici,Amici
-Inizierò ad uscire con i colleghi, basta scuse,Amici
+Inizierò ad uscire con i colleghi,Amici
 È arrivato il momento dei balli di gruppo,Amici
 Brucerò il mio divano e la copertina netflix... Si esce!,Amici
 Eliminerò la mia data di nascita da Facebook per vedere realmente chi si ricorda del mio compleanno,Amici
@@ -9,13 +9,13 @@ Iscriverò i miei amici a Uomini e Donne,Amici
 Inizierò a frequentare i gabinetti di lettura,Amici
 Offrirò consulenza gratutita su come gestire un profilo Tinder,Amici
 Proporrò ai miei amici di guardare i film belli tipo la corazzata Potëmkin,Amici
-Non ci picchieremo più durante il Monopoli, promesso!,Amici
+Non ci picchieremo più durante il Monopoli,Amici
 Aprirò ai Testimoni di Geova,Amici
 Aprirò ai venditori del Folletto,Amici
 Ai genitori dirò la verità quando mi faranno vedere i loro neonati,Amici
-Quando usciremo la sera, guiderò sempre io,Amici
-Mi sbronzerò anche per voi, cari amici,Amici
-Chiamerò fra tutti i miei amici,Amici
+Quando usciremo la sera guiderò sempre io,Amici
+Mi sbronzerò anche per voi... Cari amici,Amici
+Chiamerò frà tutti i miei amici,Amici
 La gang non s'infama,Amici
 Sistemerò tutta la rubrica del mio smartphone,Amici
 Smetterò di regalare gli smartbox,Amici
@@ -25,8 +25,8 @@ Farò una pulizia contatti per eliminare tutte le persone false,Amici
 Dirò a tutti che Babbo Natale non esiste,Amici
 Dirò ai figli dei miei amici che Babbo Natale esiste,Amici
 Entrerò in una setta psicoreligiosa,Amici
-Inizierò a frequentare la parrocchia ,Amici
-Mi iscriverò alle scuole serali ,Amici
+Inizierò a frequentare la parrocchia,Amici
+Mi iscriverò alle scuole serali,Amici
 Manderò un messaggio a tutti i contatti della rubrica di cui non ricordo la faccia,Amici
 Rintraccerò tutte le persone che ho come amici su Facebook,Amici
 Mi qualificherò alle olimpiadi,Sport
@@ -52,7 +52,7 @@ Indosserò solo tutine mega aderenti e mega sgargianti,Sport
 Andrò a fare sport nel parco con indosso solo un impermeabile,Sport
 Cercherò di non rompermi nessun legamento,Sport
 Diventerò uno star della pallavolo del quartiere,Sport
-Basta leggins, giuro,Sport
+Basta leggins. Giuro,Sport
 Mi darò al poliamore,Amore
 Mi sposerò con me stesso/a,Amore
 Perderò la verginità,Amore
@@ -65,23 +65,23 @@ Maratona Beautiful dall'anno 0,Amore
 Mi innamorerò di un chatbot,Amore
 Creerò un movimento per far sì che ci si possa sposare con i nostri amici pelosetti,Amore
 Mi ubriacherò continuamente fino a che non mi risveglierò con un anello al dito,Amore
-Mi darò al sesso a pagamento, da capire ancora in che ruolo,Amore
+Mi darò al sesso a pagamento. Da capire ancora in che ruolo,Amore
 Inizierò a rispondere ai messaggi su Tinder,Amore
 Cercherò di partecipare a Uomini e Donne o almeno a Forum,Amore
 Farò una dichiarazione d'amore a un/a mio/a collega,Amore
 Mi sposerò con una Sardina,Amore
 Darò un nome alla mia mano,Amore
-Tornerò single, ancora più single di prima,Amore
+Tornerò single. Ancora più single di prima,Amore
 Diventerò un alpaca e cercherò una famiglia amorosa che mi adotti,Amore
 Proverò a sedurre il mio pesce rosso,Amore
-Proverà a insegnare al mio gatto a rispondermi quando dico Tesoro, sono a casa!,Amore
+Proverò a insegnare al mio gatto a provare riconoscenza,Amore
 Mentirò ogni volta che mi chiederanno Sei single?,Amore
 Lascerò il mio numero di telefono nel bagno dell'Autogrill,Amore
 Pulirò l'appartamento almeno una volta a settimana come rito propiziatorio,Amore
 Parteciperò alle cene danzanti per i single,Amore
 Mi darò ai ménage à trois,Amore
 Mi darò ai club privé,Amore
-Comprerò degli spazi pubblicitari 6x3 per pubblicizarmi alle donzelle ,Amore
+Comprerò degli spazi pubblicitari 6x3 per pubblicizarmi alle donzelle,Amore
 Smetterò di ascoltare Rimmel di De Gregori pensando alla mia ex-ex-ex-ex fidanzata,Amore
 Smetterò di mettermi i vestiti di quando ero adolescente,Amore
 Inizierò a partecipare a tutti i trenini in discoteca,Amore
@@ -101,11 +101,11 @@ Diventerò tassista a New York,Soldi
 Inizierò a raccattare monete ai distributori automatici delle stazioni,Soldi
 Emigrerò a fare il lavapiatti a Londra,Soldi
 Cercherò di far fruttare la Brexit,Soldi
-Non comprerò più sigarette, le scroccherò,Soldi
+Non comprerò più sigarette. Inizierà una nuova era da scrocconi,Soldi
 È arrivato il momento di fare lo Youtuber,Soldi
 Proverò a imparare l'arte di fare i pacchi,Soldi
-Diventerò un asso del poker ,Soldi
-Giocherò più spesso al SuperEnalotto, obiettivo: sistemone,Soldi
+Diventerò un asso del poker,Soldi
+Giocherò più spesso al SuperEnalotto... Obiettivo: sistemone,Soldi
 Acquisterò un biglietto della lotteria di Capodanno,Soldi
 Andrò a giocare alle corse dei cavalli,Soldi
 A quanto son dati i reni al mercato nero?,Soldi
@@ -121,77 +121,47 @@ Proverò a diventare Fashion Blogger,Soldi
 Creerò un paradiso fiscale per attirare Amazon e poi distruggerla per salvare il mondo,Soldi
 Mi farò investire dalle auto per poi fargli causa (se sopravvivo),Soldi
 Aprirò un fake taxi ma mi farò pagare veramente,Soldi
-Diventerò cantante di trap ,Soldi
+Diventerò cantante di trap,Soldi
 Creerò una piattaforma per il gioco d'azzardo in acque internazionali,Soldi
 Proverò a vendere la mia biancheria intima,Soldi
-Smetterò di bestemmiare di fronte ai miei amici credenti,Amici
-Io e il parroco diventeremo amici,Amici
-Inizierò ad uscire con i colleghi, basta scuse,Amici
-È arrivato il momento dei balli di gruppo,Amici
-Brucerò il mio divano e la copertina netflix... Si esce!,Amici
-Eliminerò la mia data di nascita da Facebook per vedere realmente chi si ricorda del mio compleanno,Amici
-Iscriverò i miei amici a Uomini e Donne,Amici
-Inizierò a frequentare i gabinetti di lettura,Amici
-Offrirò consulenza gratutita su come gestire un profilo Tinder,Amici
-Proporrò ai miei amici di guardare i film belli tipo la corazzata Potëmkin,Amici
-Non ci picchieremo più durante il Monopoli, promesso!,Amici
-Aprirò ai Testimoni di Geova,Amici
-Aprirò ai venditori del Folletto,Amici
-Ai genitori dirò la verità quando mi faranno vedere i loro neonati,Amici
-Quando usciremo la sera, guiderò sempre io,Amici
-Mi sbronzerò anche per voi, cari amici,Amici
-Chiamerò fra tutti i miei amici,Amici
-La gang non s'infama,Amici
-Sistemerò tutta la rubrica del mio smartphone,Amici
-Smetterò di regalare gli smartbox,Amici
-Non obietterò sulle decisioni che riguardano le vacanze,Amici
-Smetterò di parlare con il mio cane e proverò a parlare con le persone vere,Amici
-Farò una pulizia contatti per eliminare tutte le persone false,Amici
-Dirò a tutti che Babbo Natale non esiste,Amici
-Dirò ai figli dei miei amici che Babbo Natale esiste,Amici
-Entrerò in una setta psicoreligiosa,Amici
-Inizierò a frequentare la parrocchia ,Amici
-Mi iscriverò alle scuole serali ,Amici
-Manderò un messaggio a tutti i contatti della rubrica di cui non ricordo la faccia,Amici
-Rintraccerò tutte le persone che ho come amici su Facebook,Amici
-Io, speriamo che me la cavo,Motto
+Io speriamo che me la cavo,Motto
 La risposta è 42,Motto
 Non può piovere per sempre,Motto
-Quello che facciamo tutte le sere Mignolo, cercare di conquistare il mondo!,Motto
+Quello che facciamo tutte le sere Mignolo cercare di conquistare il mondo!,Motto
 Pura vida!,Motto
-Nel 2020 le macchine dovevano volare, dicevano,Motto
-Impiccatevi tutti, grazie :heart:,Motto
+Nel 2020 le macchine dovevano volare... Dicevano,Motto
+Impiccatevi tutti. Grazie :heart:,Motto
 Gli animali sono meglio delle persone,Motto
-Fatto il '19, facciamo anche questo '20,Motto
+Fatto il '19 facciamo anche questo '20,Motto
 Il momento è adesso,Motto
 Fanculo alla maggioranza,Motto
-Se una cosa può andare male, andrà peggio,Motto
+Se una cosa può andare male andrà peggio,Motto
 Siamo tutti schiavi del proprio postino,Motto
 Il futuro è di chi non ha un passato,Motto
 Io della vita non ho capito un cazzo,Motto
 Unicorni e potere,Motto
-Ho amato Schifomadò, non potrò amare un baby yoda qualunque,Motto
-Fare o non fare, non c'è provare,Motto
+Ho amato Schifomadò. Non potrò mai amare un baby yoda qualunque,Motto
+Fare o non fare non c'è provare,Motto
 Io faccio come Baglioni...,Motto
-Al mondo ci sono due tipi di persone, io e voi.,Motto
+Al mondo ci sono due tipi di persone: io e voi.,Motto
 Le cose si fanno in numero dispari e in 3 si è già in troppi,Motto
 Quest'anno sarò... Devastante!,Motto
 Quest'anno sarà tutto pazzesco!,Motto
-Non è tanto il freddo, è l'umidità che ti ammazza,Motto
+Non è tanto il freddo ma è l'umidità che ti ammazza,Motto
 L'amore è più bello quando è litigarello,Motto
 Tachipirina 500 se ne prendi 2 diventa 1000,Motto
 Com'è bello far l'amore da Trieste in giù,Motto
-Emanciparsi dal vincolo delle passioni ,Motto
+Emanciparsi dal vincolo delle passioni,Motto
 Fare come l'eremita che rinuncia a sè,Motto
 A facc' ro cazz',Motto
-Sarà bello, bellissimo, travolgente,Motto
+Sarà bello. Bellissimo. Travolgente,Motto
 Quegli operai dovrebbero lavorare meglio su quel pilone...,Motto
 Ok Boomer!,Motto
 Mi farò crescere le branchie,Salute
 Smetterò di fumare... sigarette,Salute
 Smetterò di fumare... quelle elettriche,Salute
 Punto al trapianto di fegato,Salute
-Darà dei soldi a qualche palestra per pulirmi la coscenza,Salute
+Darò dei soldi a qualche palestra per pulirmi la coscenza,Salute
 Smetterò di cercare le diagnosi su Google,Salute
 Mi convicerò che il salmone fa ingrassare,Salute
 Smetterò di bere le bevande al gusto di thé delle macchinette automatiche,Salute
@@ -208,7 +178,7 @@ Mi evolverò in un essere astemio,Salute
 Cercherò di prendere il sole sola a partire dalle 16.00,Salute
 Dirò basta ai bagni dopo aver mangiato,Salute
 Smetterò di mettere la maionese nell'insalata,Salute
-Mangerò solo pandoro integrale ,Salute
+Mangerò solo pandoro integrale,Salute
 Mangerò solo panettone biologico,Salute
 Smetterò di guardare le serie TV per 12 ore consecutive,Salute
 Smetterò di guardare i telegiornali della Sera,Salute
@@ -217,5 +187,5 @@ Non farò brillare tutti insieme i petardi rimasti da capodanno,Salute
 Andrò dal medico sperando che il Servizio Sanitario Nazionale mi riconosca ancora,Salute
 Andrò a conoscere il nuovo medico di base,Salute
 Mi farò le analisi,Salute
-Non farò più gare di grappa con gli anziani al circolino ,Salute
+Non farò più gare di grappa con gli anziani al circolino,Salute
 Smetterò di farmi le diagnosi su Internet,Salute

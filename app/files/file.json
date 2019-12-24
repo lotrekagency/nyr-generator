@@ -9,7 +9,7 @@
     },
     {
         "Testo": "Inizier\u00f2 ad uscire con i colleghi",
-        "Categoria": " basta scuse"
+        "Categoria": "Amici"
     },
     {
         "Testo": "\u00c8 arrivato il momento dei balli di gruppo",
@@ -41,7 +41,7 @@
     },
     {
         "Testo": "Non ci picchieremo pi\u00f9 durante il Monopoli",
-        "Categoria": " promesso!"
+        "Categoria": "Amici"
     },
     {
         "Testo": "Aprir\u00f2 ai Testimoni di Geova",
@@ -56,15 +56,15 @@
         "Categoria": "Amici"
     },
     {
-        "Testo": "Quando usciremo la sera",
-        "Categoria": " guider\u00f2 sempre io"
+        "Testo": "Quando usciremo la sera guider\u00f2 sempre io",
+        "Categoria": "Amici"
     },
     {
-        "Testo": "Mi sbronzer\u00f2 anche per voi",
-        "Categoria": " cari amici"
+        "Testo": "Mi sbronzer\u00f2 anche per voi... Cari amici",
+        "Categoria": "Amici"
     },
     {
-        "Testo": "Chiamer\u00f2 fra tutti i miei amici",
+        "Testo": "Chiamer\u00f2 fr\u00e0 tutti i miei amici",
         "Categoria": "Amici"
     },
     {
@@ -104,11 +104,11 @@
         "Categoria": "Amici"
     },
     {
-        "Testo": "Inizier\u00f2 a frequentare la parrocchia ",
+        "Testo": "Inizier\u00f2 a frequentare la parrocchia",
         "Categoria": "Amici"
     },
     {
-        "Testo": "Mi iscriver\u00f2 alle scuole serali ",
+        "Testo": "Mi iscriver\u00f2 alle scuole serali",
         "Categoria": "Amici"
     },
     {
@@ -212,8 +212,8 @@
         "Categoria": "Sport"
     },
     {
-        "Testo": "Basta leggins",
-        "Categoria": " giuro"
+        "Testo": "Basta leggins. Giuro",
+        "Categoria": "Sport"
     },
     {
         "Testo": "Mi dar\u00f2 al poliamore",
@@ -264,8 +264,8 @@
         "Categoria": "Amore"
     },
     {
-        "Testo": "Mi dar\u00f2 al sesso a pagamento",
-        "Categoria": " da capire ancora in che ruolo"
+        "Testo": "Mi dar\u00f2 al sesso a pagamento. Da capire ancora in che ruolo",
+        "Categoria": "Amore"
     },
     {
         "Testo": "Inizier\u00f2 a rispondere ai messaggi su Tinder",
@@ -288,8 +288,8 @@
         "Categoria": "Amore"
     },
     {
-        "Testo": "Torner\u00f2 single",
-        "Categoria": " ancora pi\u00f9 single di prima"
+        "Testo": "Torner\u00f2 single. Ancora pi\u00f9 single di prima",
+        "Categoria": "Amore"
     },
     {
         "Testo": "Diventer\u00f2 un alpaca e cercher\u00f2 una famiglia amorosa che mi adotti",
@@ -300,8 +300,8 @@
         "Categoria": "Amore"
     },
     {
-        "Testo": "Prover\u00e0 a insegnare al mio gatto a rispondermi quando dico Tesoro",
-        "Categoria": " sono a casa!"
+        "Testo": "Prover\u00f2 a insegnare al mio gatto a provare riconoscenza",
+        "Categoria": "Amore"
     },
     {
         "Testo": "Mentir\u00f2 ogni volta che mi chiederanno Sei single?",
@@ -328,7 +328,7 @@
         "Categoria": "Amore"
     },
     {
-        "Testo": "Comprer\u00f2 degli spazi pubblicitari 6x3 per pubblicizarmi alle donzelle ",
+        "Testo": "Comprer\u00f2 degli spazi pubblicitari 6x3 per pubblicizarmi alle donzelle",
         "Categoria": "Amore"
     },
     {
@@ -408,8 +408,8 @@
         "Categoria": "Soldi"
     },
     {
-        "Testo": "Non comprer\u00f2 pi\u00f9 sigarette",
-        "Categoria": " le scroccher\u00f2"
+        "Testo": "Non comprer\u00f2 pi\u00f9 sigarette. Inizier\u00e0 una nuova era da scrocconi",
+        "Categoria": "Soldi"
     },
     {
         "Testo": "\u00c8 arrivato il momento di fare lo Youtuber",
@@ -420,12 +420,12 @@
         "Categoria": "Soldi"
     },
     {
-        "Testo": "Diventer\u00f2 un asso del poker ",
+        "Testo": "Diventer\u00f2 un asso del poker",
         "Categoria": "Soldi"
     },
     {
-        "Testo": "Giocher\u00f2 pi\u00f9 spesso al SuperEnalotto",
-        "Categoria": " obiettivo: sistemone"
+        "Testo": "Giocher\u00f2 pi\u00f9 spesso al SuperEnalotto... Obiettivo: sistemone",
+        "Categoria": "Soldi"
     },
     {
         "Testo": "Acquister\u00f2 un biglietto della lotteria di Capodanno",
@@ -488,7 +488,7 @@
         "Categoria": "Soldi"
     },
     {
-        "Testo": "Diventer\u00f2 cantante di trap ",
+        "Testo": "Diventer\u00f2 cantante di trap",
         "Categoria": "Soldi"
     },
     {
@@ -500,128 +500,8 @@
         "Categoria": "Soldi"
     },
     {
-        "Testo": "Smetter\u00f2 di bestemmiare di fronte ai miei amici credenti",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Io e il parroco diventeremo amici",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Inizier\u00f2 ad uscire con i colleghi",
-        "Categoria": " basta scuse"
-    },
-    {
-        "Testo": "\u00c8 arrivato il momento dei balli di gruppo",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Brucer\u00f2 il mio divano e la copertina netflix... Si esce!",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Eliminer\u00f2 la mia data di nascita da Facebook per vedere realmente chi si ricorda del mio compleanno",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Iscriver\u00f2 i miei amici a Uomini e Donne",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Inizier\u00f2 a frequentare i gabinetti di lettura",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Offrir\u00f2 consulenza gratutita su come gestire un profilo Tinder",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Proporr\u00f2 ai miei amici di guardare i film belli tipo la corazzata Pot\u00ebmkin",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Non ci picchieremo pi\u00f9 durante il Monopoli",
-        "Categoria": " promesso!"
-    },
-    {
-        "Testo": "Aprir\u00f2 ai Testimoni di Geova",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Aprir\u00f2 ai venditori del Folletto",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Ai genitori dir\u00f2 la verit\u00e0 quando mi faranno vedere i loro neonati",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Quando usciremo la sera",
-        "Categoria": " guider\u00f2 sempre io"
-    },
-    {
-        "Testo": "Mi sbronzer\u00f2 anche per voi",
-        "Categoria": " cari amici"
-    },
-    {
-        "Testo": "Chiamer\u00f2 fra tutti i miei amici",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "La gang non s'infama",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Sistemer\u00f2 tutta la rubrica del mio smartphone",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Smetter\u00f2 di regalare gli smartbox",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Non obietter\u00f2 sulle decisioni che riguardano le vacanze",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Smetter\u00f2 di parlare con il mio cane e prover\u00f2 a parlare con le persone vere",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Far\u00f2 una pulizia contatti per eliminare tutte le persone false",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Dir\u00f2 a tutti che Babbo Natale non esiste",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Dir\u00f2 ai figli dei miei amici che Babbo Natale esiste",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Entrer\u00f2 in una setta psicoreligiosa",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Inizier\u00f2 a frequentare la parrocchia ",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Mi iscriver\u00f2 alle scuole serali ",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Mander\u00f2 un messaggio a tutti i contatti della rubrica di cui non ricordo la faccia",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Rintraccer\u00f2 tutte le persone che ho come amici su Facebook",
-        "Categoria": "Amici"
-    },
-    {
-        "Testo": "Io",
-        "Categoria": " speriamo che me la cavo"
+        "Testo": "Io speriamo che me la cavo",
+        "Categoria": "Motto"
     },
     {
         "Testo": "La risposta \u00e8 42",
@@ -632,28 +512,28 @@
         "Categoria": "Motto"
     },
     {
-        "Testo": "Quello che facciamo tutte le sere Mignolo",
-        "Categoria": " cercare di conquistare il mondo!"
+        "Testo": "Quello che facciamo tutte le sere Mignolo cercare di conquistare il mondo!",
+        "Categoria": "Motto"
     },
     {
         "Testo": "Pura vida!",
         "Categoria": "Motto"
     },
     {
-        "Testo": "Nel 2020 le macchine dovevano volare",
-        "Categoria": " dicevano"
+        "Testo": "Nel 2020 le macchine dovevano volare... Dicevano",
+        "Categoria": "Motto"
     },
     {
-        "Testo": "Impiccatevi tutti",
-        "Categoria": " grazie :heart:"
+        "Testo": "Impiccatevi tutti. Grazie :heart:",
+        "Categoria": "Motto"
     },
     {
         "Testo": "Gli animali sono meglio delle persone",
         "Categoria": "Motto"
     },
     {
-        "Testo": "Fatto il '19",
-        "Categoria": " facciamo anche questo '20"
+        "Testo": "Fatto il '19 facciamo anche questo '20",
+        "Categoria": "Motto"
     },
     {
         "Testo": "Il momento \u00e8 adesso",
@@ -664,8 +544,8 @@
         "Categoria": "Motto"
     },
     {
-        "Testo": "Se una cosa pu\u00f2 andare male",
-        "Categoria": " andr\u00e0 peggio"
+        "Testo": "Se una cosa pu\u00f2 andare male andr\u00e0 peggio",
+        "Categoria": "Motto"
     },
     {
         "Testo": "Siamo tutti schiavi del proprio postino",
@@ -684,20 +564,20 @@
         "Categoria": "Motto"
     },
     {
-        "Testo": "Ho amato Schifomad\u00f2",
-        "Categoria": " non potr\u00f2 amare un baby yoda qualunque"
+        "Testo": "Ho amato Schifomad\u00f2. Non potr\u00f2 mai amare un baby yoda qualunque",
+        "Categoria": "Motto"
     },
     {
-        "Testo": "Fare o non fare",
-        "Categoria": " non c'\u00e8 provare"
+        "Testo": "Fare o non fare non c'\u00e8 provare",
+        "Categoria": "Motto"
     },
     {
         "Testo": "Io faccio come Baglioni...",
         "Categoria": "Motto"
     },
     {
-        "Testo": "Al mondo ci sono due tipi di persone",
-        "Categoria": " io e voi."
+        "Testo": "Al mondo ci sono due tipi di persone: io e voi.",
+        "Categoria": "Motto"
     },
     {
         "Testo": "Le cose si fanno in numero dispari e in 3 si \u00e8 gi\u00e0 in troppi",
@@ -712,8 +592,8 @@
         "Categoria": "Motto"
     },
     {
-        "Testo": "Non \u00e8 tanto il freddo",
-        "Categoria": " \u00e8 l'umidit\u00e0 che ti ammazza"
+        "Testo": "Non \u00e8 tanto il freddo ma \u00e8 l'umidit\u00e0 che ti ammazza",
+        "Categoria": "Motto"
     },
     {
         "Testo": "L'amore \u00e8 pi\u00f9 bello quando \u00e8 litigarello",
@@ -728,7 +608,7 @@
         "Categoria": "Motto"
     },
     {
-        "Testo": "Emanciparsi dal vincolo delle passioni ",
+        "Testo": "Emanciparsi dal vincolo delle passioni",
         "Categoria": "Motto"
     },
     {
@@ -740,8 +620,8 @@
         "Categoria": "Motto"
     },
     {
-        "Testo": "Sar\u00e0 bello",
-        "Categoria": " bellissimo"
+        "Testo": "Sar\u00e0 bello. Bellissimo. Travolgente",
+        "Categoria": "Motto"
     },
     {
         "Testo": "Quegli operai dovrebbero lavorare meglio su quel pilone...",
@@ -768,7 +648,7 @@
         "Categoria": "Salute"
     },
     {
-        "Testo": "Dar\u00e0 dei soldi a qualche palestra per pulirmi la coscenza",
+        "Testo": "Dar\u00f2 dei soldi a qualche palestra per pulirmi la coscenza",
         "Categoria": "Salute"
     },
     {
@@ -836,7 +716,7 @@
         "Categoria": "Salute"
     },
     {
-        "Testo": "Manger\u00f2 solo pandoro integrale ",
+        "Testo": "Manger\u00f2 solo pandoro integrale",
         "Categoria": "Salute"
     },
     {
@@ -872,7 +752,7 @@
         "Categoria": "Salute"
     },
     {
-        "Testo": "Non far\u00f2 pi\u00f9 gare di grappa con gli anziani al circolino ",
+        "Testo": "Non far\u00f2 pi\u00f9 gare di grappa con gli anziani al circolino",
         "Categoria": "Salute"
     },
     {

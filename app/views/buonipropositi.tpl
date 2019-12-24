@@ -68,10 +68,10 @@
                                     <span class="buonipropositi__share_text">Fallo girare!</span>
                                     <div class="buonipropositi__cont_social">
                                         <div class="buonipropositi__cont_social--col6">
-                                            <a class="buonipropositi__cont_social--facebook" href="https://www.facebook.com/sharer.php?u={{ currentUrl }}" target="_blank" ><img src="/static/images/facebook.png" />Condividi con i tuoi amici!</a>
+                                            <a class="buonipropositi__cont_social--facebook" href="https://www.facebook.com/sharer.php?u={{ currentUrl }}" target="_blank" ><img src="/static/images/fb.png" />Condividi con i tuoi amici!</a>
                                         </div>
                                         <div class="buonipropositi__cont_social--col6">
-                                            <a class="buonipropositi__cont_social--whatsapp" href="https://api.whatsapp.com/send?phone=&text={{ currentUrl }}" target="_blank" ><img src="/static/images/whatsapp.png" />Condividi con i tuoi amici!</a>
+                                            <a class="buonipropositi__cont_social--whatsapp" href="https://api.whatsapp.com/send?phone=&text={{ currentUrl }}" target="_blank" ><img src="/static/images/wa.png" />Condividi con i tuoi amici!</a>
                                         </div>
                                     </div>
                                 </div>
